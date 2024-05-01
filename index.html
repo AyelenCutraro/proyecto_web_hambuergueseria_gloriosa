@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesería</title>
+    <link rel="stylesheet" href="styleIndex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <script src="./assets/js/bootstrap.js"></script> <!-- Cargo JavaScript-->
+    <script src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="bungee-regularspice-">Gloriosa Burgers</h1>
+        <nav>
+            <ul>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./novedades.html">Novedades</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <i class="fab fa-instagram"></i>
+            </ul>
+        </nav>
+    </header>
+    <section id="bienvenida" class="section1">
+        <h3 class="chicle-regular">Bienvenidos a Gloriosa Burgers!</h3>
+    </section>
+    <section id="consulta" class="section2">
+    <p class="kalam-bold">Qué te gustaría hacer?</p>
+    </section>
+
+<div class="opciones">
+    <form action="./reservas.html" method="get" name="formularioContacto"> <!-- En action me falta la ruta a donde quiero que se envíe mi formulario -->
+        <button class="reservar" type="submit"> 
+            <label for="reservar">
+                <section id="reservar" class="section">
+                     <h2 class="kalam-bold">Reservar una mesa en nuestro local</h2>
+                     <p class="kalam-bold">¡Reúnete con amigos y/o familiares!</p>
+                </section>
+            </label>
+        </button>
+    </form>
+            
+    <form action="./productos.html" method="get" name="formularioPedido">
+        <button class="retirar" type="submit"> 
+            <label for="retirar">
+                <section id="retirar" class="section">
+                    <h2 class="kalam-bold">Venir en persona a retirar tu pedido</h2>
+                    <p class="kalam-bold">¡Disfruta de nuestro servicio Take Away!</p>
+                </section>
+            </label>
+        </button>
+    </form>
+
+    <form action="./productos.html" method="get" name="formularioEnvio">
+        <button class="enviar" type="submit"> 
+            <label for="enviar">
+                <section id="enviar" class="section">
+                    <h2 class="kalam-bold">Hacer un pedido a domicilio</h2>
+                    <p class="kalam-bold">¡Te llevamos el pedido hasta tu casa!</p>
+                </section>
+            </label>
+        </button>
+    </form>
+</div>
+<footer>
+    <div class="container">
+            <div class="item kalam-regular">Preguntas frecuentes</div>
+            <div class="item kalam-regular">Sucursales</div>
+            <div class="item kalam-regular">Quienes somos?</div>
+            <div class="item kalam-regular">Libro de quejas</div>
+            <div class="item kalam-regular">Asuntos Legales</div>
+            <div class="item kalam-regular">Novedades</div> 
+            <div class="item kalam-regular">Contacto</div>  
+            <div class="item kalam-regular">Servicios</div> 
+            <div class="item kalam-regular">Políticas de privacidad</div>          
+    </div>      
+    <div class="copyright kalam-regular">&copy; 2024 Gloriosa Burgers. Todos los derechos reservados.</div>
+</footer>
+</body>
+</html>
