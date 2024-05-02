@@ -105,7 +105,7 @@ body, h1, h2, p, ul, li {
         font-style: oblique;
         color: gold;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     /* Título Qué te gustaría? */
@@ -114,6 +114,7 @@ body, h1, h2, p, ul, li {
         padding: 10px 10px;
         text-align: center;
         font-size: 4vw;
+        margin-left: -50px;
     }
 
     /* Títulos del menú */
@@ -125,8 +126,8 @@ body, h1, h2, p, ul, li {
         max-width: max-content;
         text-align: center;
         color: white;
-        margin-top: 10px;
-        margin-left: 40px;
+        margin-top: 5px;
+        margin-left: 15px;
         margin-bottom: 5px;
         background-color: transparent; /* Cambiado a transparente */
         border-radius: 40%;
@@ -165,7 +166,6 @@ body, h1, h2, p, ul, li {
         color: white;
         text-align: center;
         font-style: italic;
-        padding: 20px;
         position: fixed; /* Para enviar el footer al fondo */
         bottom: 0; /* Lo fija en la parte inferior */
         left: 0;
