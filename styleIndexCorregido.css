@@ -188,10 +188,11 @@ body, h1, h2, p, ul, li {
         color: white;
         text-align: center;
         font-style: italic;
+        font-size: 2vw;
         background-color: #0f0f0f;
         background-size: cover;
         border-top: 1px solid white; 
-        position: fixed; /* Para enviar el footer al fondo */
+        position:fixed; /* Para enviar el footer al fondo */
         bottom: 0; /* Lo fija en la parte inferior */
         left: 0;
         right: 0;
