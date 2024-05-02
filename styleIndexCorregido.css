@@ -82,10 +82,8 @@ nav ul li a:hover {
 
   body {
     /* Títulos del nav */
-    font-size: 5vW;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-image: url(./assets/Imagenes/fondos/burgerSmall.jpg);
-    background-size: cover;
     color: black;
     background-attachment: fixed;
     display: flex;
