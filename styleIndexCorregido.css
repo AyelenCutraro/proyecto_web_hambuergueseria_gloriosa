@@ -107,7 +107,7 @@ nav ul li a:hover {
             color:rgb(4, 139, 250);
             padding: 10px 10px;
             text-align: center;
-            font-size: 3.5vw;
+            font-size: 4vw;
         }
 
     /* Títulos del menú */
@@ -115,7 +115,7 @@ nav ul li a:hover {
         font-size: 3vw;
         padding: 15px 15px;
         width: 20vW;
-        min-width: 70vw;
+        min-width: 75vw;
         max-width:max-content;
         text-align: center;
         color: white;
