@@ -129,8 +129,8 @@ body, h1, h2, p, ul, li {
         max-width: max-content;
         text-align: center;
         color: white;
-        margin-top: 5px;
-        margin-left: 15px;
+        margin-top: 20px;
+        margin-left: 20px;
         margin-bottom: 55px;
         background-color:rgba(41, 37, 37, 0.2); /* Cambiado a transparente */
         border-radius: 40%;
