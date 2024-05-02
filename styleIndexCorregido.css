@@ -111,7 +111,7 @@ nav ul li a:hover {
 
     /* Títulos del menú */
     .section {
-        font-size: 4vw;
+        font-size: 3.5vw;
         padding: 15px 15px;
         width: 20vW;
         min-width: 51vw;
@@ -119,7 +119,7 @@ nav ul li a:hover {
         text-align: center;
         color: white;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 50px;
         margin-bottom: 5px;
         background-color: transparent; /* Cambiado a transparente */
         border-radius: 40%;
