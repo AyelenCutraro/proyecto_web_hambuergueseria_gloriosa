@@ -8,6 +8,8 @@ body, h1, h2, p, ul, li {
 @media only screen and (max-width: 600px) {
 
     header {
+        position: fixed;
+        top:0;
         background-color: rgba(97, 3, 42);
         width: 100%;
         text-align: center;
@@ -86,6 +88,7 @@ body, h1, h2, p, ul, li {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/burgerSmall.jpg);
         background-size: cover;
+        height: 50vh;
         color: black;
         background-attachment: fixed;
         display: flex;
