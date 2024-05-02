@@ -331,7 +331,6 @@ body, h1, h2, p, ul, li {
         /* Títulos del nav */
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/fondoMax.png);
-        height: 100vh;
         background-size: cover;
         color: rgb(10, 10, 10);
         background-attachment: fixed;
@@ -424,19 +423,20 @@ body, h1, h2, p, ul, li {
 .container {
     width: 100%;
     margin-top: auto;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: repeat(3, 1fr);
+    display: flexbox;
+    flex-direction: column;
     background-color: #0f0f0f;
     color: white;
     text-align: center;
     font-style: italic;
+    font-size: 1.5vw;
     padding: 20px;
   }
   
   footer {
     background-color: #0f0f0f;
     background-size: cover;
+    font-size: 1.5vw;
   }
   
   .copyright {
@@ -446,14 +446,20 @@ body, h1, h2, p, ul, li {
     font-style: italic;
     background-color: #0f0f0f;
     border-top: 2px solid white;
-    padding: 10px 0; 
+    padding: 10px 0;
+    font-size: 1.2vw; 
   }
   
   /* Celulares */
   @media only screen and (max-width: 650px) {
     .container {
+      font-size: 2.5vw;
       grid-template-columns: repeat(1, 1fr);
       gap: 1em;
+    }
+  
+    .copyright {
+      font-size: 1.5vw;
     }
   }
   
