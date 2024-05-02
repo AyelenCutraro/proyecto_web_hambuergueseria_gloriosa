@@ -116,14 +116,10 @@ body, h1, h2, p, ul, li {
     .section2 {
         font-size:3vw;
         color:gold;
-        padding: 10px 10px;
         width: 50vW;
         min-width: 65vw;
         max-width:min-content;
         text-align: center;
-        margin-top: -5px;
-        margin-left: -30px;
-        margin-bottom: -15px;
     }
 
     .section:hover {
