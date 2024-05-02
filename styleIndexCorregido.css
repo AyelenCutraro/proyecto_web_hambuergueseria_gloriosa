@@ -155,6 +155,9 @@ body, h1, h2, p, ul, li {
         background-color: rgb(82, 173, 123);
         border-bottom-style: dotted;
     }  
+    .copyright {
+        font-size: small;
+    }
 }
 
 /************************************************ Tablets *********************************************************/
