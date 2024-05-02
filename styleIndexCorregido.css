@@ -3,62 +3,63 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-
 /********************************************** Celulares ********************************************************/
 
 @media only screen and (max-width: 600px) {
 
-header {
-    background-color: rgba(97, 3, 42);
-    width: 100%;
-    background-size: cover;
-    text-align: center;
-}
+    header {
+        background-color: rgba(97, 3, 42);
+        width: 100%;
+        text-align: center;
+        position: fixed; /* Para mantener el header arriba */
+        z-index: 999; /* Para mantenerlo arriba de los demás elementos */
+    }
 
-header h1 {
-    color: white;
-}
+    header h1 {
+        color: white;
+    }
 
-nav ul {
-    list-style-type: none;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+    nav ul {
+        list-style-type: none;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 
-nav ul li {
-    display: inline;
-}
+    nav ul li {
+        display: inline;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s, text-decoration 0.3s;
-    font-style:oblique;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: color 0.3s, text-decoration 0.3s;
+        font-style: oblique;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
 
-nav ul li a:hover {
-    color: blue; /* Cambia el color al pasar el mouse */
-}
+    nav ul li a:hover {
+        color: blue; /* Cambia el color al pasar el mouse */
+    }
 
-/* Favicon de Facebook */
-.fa-facebook-square {
-    color: white;
-    margin-right: 5px;
-  }
-  .fa-facebook-square:hover {
-    color: blue;
-  }
+    /* Favicon de Facebook */
+    .fa-facebook-square {
+        color: white;
+        margin-right: 5px;
+    }
+    
+    .fa-facebook-square:hover {
+        color: blue;
+    }
 
-/* Favicon de Instagram */
-.fa-instagram{
-    color: white;
-}
+    /* Favicon de Instagram */
+    .fa-instagram {
+        color: white;
+    }
 
-.fa-instagram:hover {
-    color: blue;
-  }
+    .fa-instagram:hover {
+        color: blue;
+    }
 
     /* Fuentes */
     .kalam-regular {
@@ -66,51 +67,53 @@ nav ul li a:hover {
         font-weight: 400;
         font-style: normal;
         margin-left: 20px;
-      }
+    }
     
-      .kalam-bold {
+    .kalam-bold {
         font-family: "Kalam", cursive;
         font-weight: 700;
         font-style: normal;
-      }  
+    }  
     
-      /* Título Gloriosa Burgers */
-      .bungee-regularspice- {
+    /* Título Gloriosa Burgers */
+    .bungee-regularspice- {
         margin-bottom: 5px;
         font-family: "Bungee Spice", sans-serif;
         font-weight: 400;
-        font-style:normal;
-      }
+        font-style: normal;
+    }
 
-  body {
-    /* Títulos del nav */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(./assets/Imagenes/fondos/burgerSmall.jpg);
-    background-size: cover;
-    color: black;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden;
-}
+    body {
+        /* Títulos del nav */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-image: url(./assets/Imagenes/fondos/burgerSmall.jpg);
+        background-size: cover;
+        color: black;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+        padding-top: 50px; /* Para evitar que el contenido se oculte detrás del header */
+    }
+
     /* Título Bienvenido a Gloriosa Burgers! */
     .chicle-regular {
         font-family: "Chicle", serif;
         font-weight: 400;
-        font-style:oblique;
+        font-style: oblique;
         color: gold;
         text-align: center;
         margin-top: 10px;
-      }
+    }
 
-          /* Título Qué te gustaría? */
-          .section2 {
-            color:rgb(4, 139, 250);
-            padding: 10px 10px;
-            text-align: center;
-            font-size: 4vw;
-        }
+    /* Título Qué te gustaría? */
+    .section2 {
+        color: rgb(4, 139, 250);
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 4vw;
+    }
 
     /* Títulos del menú */
     .section {
@@ -118,7 +121,7 @@ nav ul li a:hover {
         padding: 15px 15px;
         width: 20vW;
         min-width: 75vw;
-        max-width:max-content;
+        max-width: max-content;
         text-align: center;
         color: white;
         margin-top: 10px;
@@ -129,53 +132,59 @@ nav ul li a:hover {
         transition: transform 0.5s ease-in-out;
         border: none; /* Añadido para eliminar el borde del botón */
     }
+
     /* Añadido para hacer el botón transparente */
     .reservar, .retirar, .enviar {
         background-color: transparent;
         border: none;
-        }
-       
-        .section1 {
-            text-align: center;
-        }
-    
-        .section:hover {
-            transform: scale(1.05) translateY(-10px);
-            transition: transform 0.3s ease;
-            color: black;
-            background-color:rgb(82, 173, 123);
-            border-bottom-style:dotted;
-        }  
     }
-/************************************************ Footer *********************************************************/
-.container {
-    width: 100%;
-    margin-top:1;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: repeat(3, 1fr);
-    background-color: #0f0f0f;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #0f0f0f;
-    background-size: cover;
-  }
-  
-  .copyright {
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    background-color: #0f0f0f;
-    background-size: cover;
-    border-top: 2px solid white;
-    padding: 10px 0; 
-  }
-  
-  
+
+    .section1 {
+        text-align: center;
+    }
+
+    .section:hover {
+        transform: scale(1.05) translateY(-10px);
+        transition: transform 0.3s ease;
+        color: black;
+        background-color: rgb(82, 173, 123);
+        border-bottom-style: dotted;
+    }  
+
+    /************************************************ Footer *********************************************************/
+
+    .container {
+        width: 100%;
+        margin-top: 1;
+        display: grid;
+        gap: 1.6em;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #0f0f0f;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        font-style: italic;
+        padding: 20px;
+        position: fixed; /* Para enviar el footer al fondo */
+        bottom: 0; /* Lo fija en la parte inferior */
+        left: 0;
+        right: 0;
+        z-index: 998; /* Por debajo del header */
+    }
+
+    footer {
+        background-color: #0f0f0f;
+        background-size: cover;
+    }
+
+    .copyright {
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-style: italic;
+        background-color: #0f0f0f;
+        background-size: cover;
+        border-top: 2px solid white;
+        padding: 10px 0; 
+    }
+}
