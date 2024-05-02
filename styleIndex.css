@@ -89,6 +89,10 @@ body, h1, h2, p, ul, li {
         font-size: 5vw;
     }
 
+    .opciones{
+        margin-bottom: 50px;
+    }
+
     /* Título Qué te gustaría? */
     .section2 {
         color: rgb(4, 139, 250);
