@@ -3,27 +3,6 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-  /* Fuentes */
-  .kalam-regular {
-    font-family: "Kalam", cursive;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 20px;
-  }
-
-  .kalam-bold {
-    font-family: "Kalam", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }  
-
-  /* Título Gloriosa Burgers */
-  .bungee-regularspice- {
-    margin-bottom: 5px;
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style:normal;
-  }
 
 /********************************************** Celulares ********************************************************/
 
@@ -78,6 +57,28 @@ nav ul li a:hover {
 .fa-instagram:hover {
     color: blue;
   }
+
+    /* Fuentes */
+    .kalam-regular {
+        font-family: "Kalam", cursive;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 20px;
+      }
+    
+      .kalam-bold {
+        font-family: "Kalam", cursive;
+        font-weight: 700;
+        font-style: normal;
+      }  
+    
+      /* Título Gloriosa Burgers */
+      .bungee-regularspice- {
+        margin-bottom: 5px;
+        font-family: "Bungee Spice", sans-serif;
+        font-weight: 400;
+        font-style:normal;
+      }
 
   body {
     /* Títulos del nav */
