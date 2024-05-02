@@ -139,11 +139,67 @@ nav ul li a:hover {
         }
     
         .section:hover {
-            transform: scale(1.05) translateY(-20px);
+            transform: scale(1.05) translateY(-10px);
             transition: transform 0.3s ease;
             color: black;
             background-color:rgb(82, 173, 123);
             border-bottom-style:dotted;
         }  
     }
-
+/************************************************ Footer *********************************************************/
+.container {
+    width: 100%;
+    margin-top: auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #0f0f0f;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5vw;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #0f0f0f;
+    background-size: cover;
+    font-size: 1.5vw;
+  }
+  
+  .copyright {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    background-color: #0f0f0f;
+    border-top: 2px solid white;
+    padding: 10px 0;
+    font-size: 1.2vw; 
+  }
+  
+  /* Celulares */
+  @media only screen and (max-width: 650px) {
+    .container {
+      font-size: 2.5vw;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1em;
+    }
+  
+    .copyright {
+      font-size: 1.5vw;
+    }
+  }
+  
+  /* Tablets */
+  @media only screen and (min-width: 651px) and (max-width: 1000px) {
+    .container {
+      font-size: 2vw;
+    }
+  
+    .copyright {
+      font-size: 1.5vw;
+    }
+  }
+  
