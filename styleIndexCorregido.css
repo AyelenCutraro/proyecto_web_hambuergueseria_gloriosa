@@ -457,7 +457,7 @@ body, h1, h2, p, ul, li {
         color: white;
         text-align: center;
         font-style: italic;
-        position: fixed; /* Para enviar el footer al fondo */
+        position: relative; /* Para enviar el footer al fondo */
         bottom: 0; /* Lo fija en la parte inferior */
         left: 0;
         right: 0;
@@ -482,9 +482,8 @@ body, h1, h2, p, ul, li {
         background-color: #0f0f0f;
         background-size: cover;
         border-top: 1px solid white; 
-        position:fixed; /* Para enviar el footer al fondo */
+        position: relative; /* Para enviar el footer al fondo */
         bottom: 0; /* Lo fija en la parte inferior */
-        left: -10;
         right: 0;
         z-index: 998; /* Por debajo del header */
 
