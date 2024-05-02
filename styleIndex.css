@@ -115,7 +115,7 @@ body, h1, h2, p, ul, li {
 
     /* Título Qué te gustaría? */
     .section2 {
-        font-size:3vw;
+        /*font-size:3vw;*/
         color:gold;
         width: 50vW;
         min-width: 65vw;
@@ -402,7 +402,6 @@ body, h1, h2, p, ul, li {
     font-family: "Kalam", cursive;
     font-weight: 400;
     font-style: normal;
-    margin-left: 20px;
   }
 
   .kalam-bold {
@@ -422,55 +421,47 @@ body, h1, h2, p, ul, li {
 /************************************************ Footer *********************************************************/
 .container {
     width: 100%;
-    margin-top: auto;
-    display: flexbox;
-    flex-direction: column;
+    margin-left: 0;
+    position: fixed; /* Para que el footer esté fijo en la parte inferior */
+    bottom: 0; /* Lo fija en la parte inferior */
+    left: 0;
     background-color: #0f0f0f;
     color: white;
     text-align: center;
     font-style: italic;
-    font-size: 1.5vw;
-  padding: 20px;
-  }  
-  
-  footer {
+}
+
+footer {
     background-color: #0f0f0f;
     background-size: cover;
-    font-size: 1.5vw;
-  }
-  
-  .copyright {
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    background-color: #0f0f0f;
-    border-top: 2px solid white;
-    padding: 10px 0;
-    font-size: 1.2vw; 
-  }
-  
-  /* Celulares */
-  @media only screen and (max-width: 650px) {
+}
+
+/* Ajuste del tamaño del texto según el contenido */
+.container, .copyright {
+    font-size: auto;
+}
+
+/* Celulares */
+@media only screen and (max-width: 650px) {
     .container {
-      font-size: 2.5vw;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 1em;
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido en dispositivos móviles */
     }
-  
-    .copyright {
-      font-size: 1.5vw;
+
+    footer {
+        font-size: 2.5vw; /* Ajuste de tamaño de fuente para dispositivos móviles */
     }
-  }
-  
-  /* Tablets */
-  @media only screen and (min-width: 651px) and (max-width: 1000px) {
+}
+
+/* Tablets */
+@media only screen and (min-width: 651px) and (max-width: 850px) {
     .container {
-      font-size: 2vw;
+        font-size: 2vw;
     }
-  
-    .copyright {
-      font-size: 1.5vw;
+
+    footer {
+        font-size: 2vw; /* Ajuste de tamaño de fuente para tablets */
     }
-  }
-  
+}
