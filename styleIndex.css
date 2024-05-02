@@ -1,7 +1,6 @@
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    display: flexbox;
 }
 
 /********************************************** Celulares ********************************************************/
@@ -84,7 +83,7 @@ body, h1, h2, p, ul, li {
         padding-top: 100px; /* Para evitar que el contenido se oculte detrás del header */
     }
 
-    /* Título Bienvenido a Gloriosa Burgers! */
+    /* Título Bienvenidos a Gloriosa Burgers! */
     .section1{
         color: gold;
         text-align: center;
@@ -125,7 +124,6 @@ body, h1, h2, p, ul, li {
         background-color: transparent;
         border: none;
         margin-top: 0px;
-
     }
 
     .section:hover {
@@ -138,7 +136,7 @@ body, h1, h2, p, ul, li {
 
     .container {
         bottom: 0;
-        font-size: x-small;
+        font-size: small;
     }
 
     .copyright {
@@ -218,12 +216,13 @@ body, h1, h2, p, ul, li {
         overflow-x: hidden;
     }
     
-    /* Título Bienvenido a Gloriosa Burgers! */
+    /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
         margin-top: -30px;
         margin-left: 10px;
         font-size: 2.3vw;
         text-align: center;
+        color:black;
     }
 
     /* Títulos del menú */
@@ -264,12 +263,6 @@ body, h1, h2, p, ul, li {
         margin-top: -5px;
         margin-left: -50px;
         margin-bottom: -15px;
-    }
-
-    /* Título Bienvenidos a Gloriosa Burgers! */
-    .chicle-regular {
-        color:black;
-        font-size: 4vw;
     }
     .section:hover {
         transform: scale(1.05) translateY(-10px);
@@ -347,7 +340,7 @@ body {
     flex-direction: column;
 }
 
-    /* Título Bienvenido a Gloriosa Burgers! */
+    /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
         margin-top: -20px;
         font-size: 2.5vw;
@@ -422,7 +415,6 @@ body {
     font-weight: 400;
     font-style: oblique;
 }
-
 
 /**************************************************** Footer *********************************************************/
 .grid-container {
