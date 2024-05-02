@@ -99,6 +99,7 @@ nav ul li a:hover {
         font-style:oblique;
         color: gold;
         text-align: center;
+        margin-top: 10px;
       }
 
           /* Título Qué te gustaría? */
@@ -110,13 +111,9 @@ nav ul li a:hover {
 
     /* Títulos del menú */
     .section {
-        padding: 15px 15px;
         max-width:min-content;
         text-align: center;
         color: white;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-bottom: 5px;
         background-color: transparent; /* Cambiado a transparente */
         border-radius: 40%;
         transition: transform 0.5s ease-in-out;
@@ -129,12 +126,8 @@ nav ul li a:hover {
         }
        
         .section1 {
-            margin-top: -20px;
-            margin-left: 10px;
             text-align: center;
         }
-    
-    
     
         .section:hover {
             transform: scale(1.05) translate(20px, 0px);
