@@ -163,10 +163,11 @@ body, h1, h2, p, ul, li {
 
     .container {
         bottom: 0;
+        font-size: x-small;
     }
 
     .copyright {
-        font-size: small;
+        font-size: x-small;
         bottom: 0;
     }
 }
