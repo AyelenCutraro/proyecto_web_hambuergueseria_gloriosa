@@ -95,9 +95,24 @@ nav ul li a:hover {
     .chicle-regular {
         font-family: "Chicle", serif;
         font-weight: 400;
-        font-style: normal;
-        color:white;
+        font-style:oblique;
+        color: gold;
+        text-align: center;
       }
+
+          /* Título Qué te gustaría? */
+          .section2 {
+            font-size:3vw;
+            color:gold;
+            padding: 10px 10px;
+            width: 50vW;
+            min-width: 65vw;
+            max-width:min-content;
+            text-align: center;
+            margin-top: -5px;
+            margin-left: -30px;
+            margin-bottom: -15px;
+        }
 
     /* Títulos del menú */
     .section {
@@ -113,5 +128,25 @@ nav ul li a:hover {
         transition: transform 0.5s ease-in-out;
         border: none; /* Añadido para eliminar el borde del botón */
     }
+    /* Añadido para hacer el botón transparente */
+    .reservar, .retirar, .enviar {
+        background-color: transparent;
+        border: none;
+        }
+       
+        .section1 {
+            margin-top: -20px;
+            margin-left: 10px;
+            text-align: center;
+        }
+    
+    
+    
+        .section:hover {
+            transform: scale(1.05) translate(20px, 0px);
+            color: black;
+            background-color:rgb(82, 173, 123);
+            border-bottom-style:dotted;
+        }  
+    }
 
-}
