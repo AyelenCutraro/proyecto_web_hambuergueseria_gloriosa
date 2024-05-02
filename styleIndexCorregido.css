@@ -13,7 +13,6 @@ header {
     width: 100%;
     background-size: cover;
     text-align: center;
-    padding: 5px;
 }
 
 header h1 {
@@ -174,6 +173,7 @@ nav ul li a:hover {
     text-align: center;
     font-style: italic;
     background-color: #0f0f0f;
+    background-size: cover;
     border-top: 2px solid white;
     padding: 10px 0; 
   }
