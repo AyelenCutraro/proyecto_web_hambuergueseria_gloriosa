@@ -271,14 +271,14 @@ body, h1, h2, p, ul, li {
         min-width: 65vw;
         max-width:min-content;
         text-align: center;
-        margin-top: -5px;
+        margin-top: -15px;
         margin-left: -50px;
         margin-bottom: -15px;
     }
     .section:hover {
         transform: scale(1.05) translateY(-10px);
         color: black;
-        background-color: rgb(189, 63, 4); 
+        background-color: rgb(57, 196, 184); 
         border-bottom-style:dotted;
     } 
 }
