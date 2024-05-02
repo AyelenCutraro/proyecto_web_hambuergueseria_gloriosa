@@ -2,6 +2,7 @@ header {
     background-color: rgba(97, 3, 42);
     background-size: cover;
     text-align: center;
+    padding: 10px;
 }
 
 header h1 {
@@ -11,6 +12,7 @@ header h1 {
 nav ul {
     list-style-type: none;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 nav ul li {
