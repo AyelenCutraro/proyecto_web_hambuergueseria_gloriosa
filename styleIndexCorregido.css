@@ -139,7 +139,8 @@ nav ul li a:hover {
         }
     
         .section:hover {
-            transform: scale(1.05) translate(0px, 0px, 20px);
+            transform: scale(1.05) translateY(-20px);
+            transition: transform 0.3s ease;
             color: black;
             background-color:rgb(82, 173, 123);
             border-bottom-style:dotted;
