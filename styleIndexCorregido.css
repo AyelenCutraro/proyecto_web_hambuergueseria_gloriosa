@@ -456,6 +456,7 @@ body, h1, h2, p, ul, li {
 /**************************************************** Footer *********************************************************/
     .container {
         width: 100%;
+        margin-top: auto;
         display: grid;
         gap: 1.6em;
         grid-template-columns: repeat(3, 1fr);
