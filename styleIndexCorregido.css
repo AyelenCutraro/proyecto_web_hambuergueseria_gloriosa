@@ -111,7 +111,7 @@ nav ul li a:hover {
 
     /* Títulos del menú */
     .section {
-        max-width:min-content;
+        max-width:max-content;
         text-align: center;
         color: white;
         background-color: transparent; /* Cambiado a transparente */
