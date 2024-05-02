@@ -11,8 +11,6 @@ body, h1, h2, p, ul, li {
         background-color: rgba(97, 3, 42);
         width: 100%;
         text-align: center;
-        position: fixed; /* Para mantener el header arriba */
-        z-index: 999; /* Para mantenerlo arriba de los demás elementos */
     }
 
     header h1 {
@@ -186,5 +184,11 @@ body, h1, h2, p, ul, li {
         background-size: cover;
         border-top: 2px solid white;
         padding: 10px 0; 
+        position: fixed; /* Para enviar el footer al fondo */
+        bottom: 0; /* Lo fija en la parte inferior */
+        left: 0;
+        right: 0;
+        z-index: 998; /* Por debajo del header */
+
     }
 }
