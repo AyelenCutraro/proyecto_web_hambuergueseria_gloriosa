@@ -1,101 +1,140 @@
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
+    display: flexbox;
 }
-/********************************************************* Celulares **********************************************/
-@media only screen and (max-width: 400px) {
+
+/********************************************** Celulares ********************************************************/
+
+@media only screen and (max-width: 650px) {
+
     header {
+        padding: 10px;
+        position: fixed;
+        top:0;
         background-color: rgba(97, 3, 42);
-        text-align: center;
         width: 100%;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        margin-bottom: 5px;
+        text-align: center;
     }
-    
+
     header h1 {
         color: white;
     }
-    
+
     nav ul {
         list-style-type: none;
-        margin-top: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    
+
     nav ul li {
         display: inline;
-        margin-right: 20px;
     }
-    
+
     nav ul li a {
         text-decoration: none;
         color: white;
-        font-size: 2.5vw;
         transition: color 0.3s, text-decoration 0.3s;
-        padding: 10px;
-        font-style:oblique;
+        font-style: oblique;
+        margin-right: 5px;
+        margin-bottom: 10px;
     }
-    
+
     nav ul li a:hover {
         color: blue; /* Cambia el color al pasar el mouse */
     }
-    
+
     /* Favicon de Facebook */
     .fa-facebook-square {
-        font-size: 2vw; 
         color: white;
-      }
-    
-      .fa-facebook-square:hover {
-        color: blue;
-      }
-    
-    /* Favicon de Instagram */
-    .fa-instagram{
-        font-size: 2vw; 
-        color: white;
+        margin-right: 5px;
     }
     
+    .fa-facebook-square:hover {
+        color: blue;
+    }
+
+    /* Favicon de Instagram */
+    .fa-instagram {
+        color: white;
+    }
+
     .fa-instagram:hover {
         color: blue;
-      }
+    }
+
+    /* Fuentes */
+    .kalam-regular {
+        font-family: "Kalam", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .kalam-bold {
+        font-family: "Kalam", cursive;
+        font-weight: 700;
+        font-style: normal;
+    }  
+    
+    /* Título Gloriosa Burgers */
+    .bungee-regularspice- {
+        margin-bottom: 5px;
+        font-family: "Bungee Spice", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 8vw;
+    }
 
     body {
         /* Títulos del nav */
-        font-size: 5vW;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/burgerSmall.jpg);
         background-size: cover;
+        height: 50vh;
         color: black;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
+        padding-top: 100px; /* Para evitar que el contenido se oculte detrás del header */
     }
-    
+
     /* Título Bienvenido a Gloriosa Burgers! */
     .chicle-regular {
         font-family: "Chicle", serif;
         font-weight: 400;
-        font-style: normal;
+        font-style: oblique;
         color: gold;
-        
-      }
+        text-align: center;
+        margin-top: 40px;
+        font-size: 5vw;
+    }
+
+    /* Título Qué te gustaría? */
+    .section2 {
+        color: rgb(4, 139, 250);
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 6vw;
+    }
 
     /* Títulos del menú */
     .section {
-        font-size: 2vw;
-        padding: 15px 15px;
+        text-align: center;
+        display: grid;
+        gap: 0.5em;
+        grid-template-rows: repeat(2, 1fr);
+        padding: 12px 12px;
         width: 20vW;
-        min-width: 51vw;
-        max-width:min-content;
+        min-width: 80vw;
+        max-width: max-content;
         text-align: center;
         color: white;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-bottom: 5px;
-        background-color: transparent; /* Cambiado a transparente */
+        margin-top: 20px;
+        margin-left: 30px;
+        margin-bottom: 0px;
+        background-color:rgba(41, 37, 37, 0.5); /* Cambiado a transparente */
         border-radius: 40%;
         transition: transform 0.5s ease-in-out;
         border: none; /* Añadido para eliminar el borde del botón */
@@ -103,36 +142,33 @@ body, h1, h2, p, ul, li {
 
     /* Añadido para hacer el botón transparente */
     .reservar, .retirar, .enviar {
-    background-color: transparent;
-    border: none;
-    }
-   
-    .section1 {
-        margin-top: -20px;
-        margin-left: 10px;
-        text-align: center;
-    }
+        background-color: transparent;
+        border: none;
+        margin-top: 0px;
 
-    /* Título Qué te gustaría? */
-    .section2 {
-        /*font-size:3vw;*/
-        color:gold;
-        width: 50vW;
-        min-width: 65vw;
-        max-width:min-content;
-        text-align: center;
     }
 
     .section:hover {
-        transform: scale(1.05) translate(20px, 0px);
+        transform: scale(1.05) translateY(-10px);
+        transition: transform 0.3s ease;
         color: black;
-        background-color:rgb(82, 173, 123);
-        border-bottom-style:dotted;
+        background-color: rgb(82, 173, 123);
+        border-bottom-style: dotted;
     }  
+
+    .container {
+        bottom: 0;
+        font-size: x-small;
+    }
+
+    .copyright {
+        font-size: x-small;
+        bottom: 0;
+    }
 }
 
 /************************************************ Tablets *********************************************************/
-@media only screen and (min-width: 401px) and (max-width: 850px)  {
+@media only screen and (min-width: 651px) and (max-width: 850px)  {
     header {
         background-color: rgba(97, 3, 42);
         background-size: cover;
@@ -270,7 +306,7 @@ body, h1, h2, p, ul, li {
 }
 
 /************************************************** Notebooks ****************************************************/
-@media only screen and (min-width: 851px)  {
+@media only screen and (min-width: 850px)  {
     header {
         background-color: rgba(97, 3, 42);
         text-align: center;
@@ -398,70 +434,63 @@ body, h1, h2, p, ul, li {
 
 }
 /* Fuentes */
-  .kalam-regular {
-    font-family: "Kalam", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  .kalam-bold {
-    font-family: "Kalam", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }  
-
-  .bungee-regularspice- {
-    margin-bottom: 5px;
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style:normal;
-    font-size:4vw;
-}
- 
-/************************************************ Footer *********************************************************/
-.container {
-    width: 100%;
-    margin-left: 0;
-    position: fixed; /* Para que el footer esté fijo en la parte inferior */
-    bottom: 0; /* Lo fija en la parte inferior */
-    left: 0;
-    background-color: #0f0f0f;
-    color: white;
-    text-align: center;
-    font-style: italic;
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-footer {
-    background-color: #0f0f0f;
-    background-size: cover;
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}  
+
+.bungee-regularspice- {
+  margin-bottom: 5px;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style:normal;
 }
 
-/* Ajuste del tamaño del texto según el contenido */
-.container, .copyright {
-    font-size: auto;
-}
-
-/* Celulares */
-@media only screen and (max-width: 650px) {
+/**************************************************** Footer *********************************************************/
     .container {
-        font-size: 2.5vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra el contenido en dispositivos móviles */
+        width: 100%;
+        margin-top: auto;
+        display: grid;
+        gap: 1.6em;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        background-color: #0f0f0f;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        font-style: italic;
+        position: fixed;
+        bottom: 0; 
+        left: 0;
+        right: 0;
+        z-index: 998;
+        margin-top: 10px; 
+        padding-top: 10px;;
     }
 
     footer {
-        font-size: 2.5vw; /* Ajuste de tamaño de fuente para dispositivos móviles */
-    }
-}
-
-/* Tablets */
-@media only screen and (min-width: 651px) and (max-width: 850px) {
-    .container {
-        font-size: 2vw;
+        background-color: #0f0f0f;
+        background-size: cover;
+        width: 100%;
     }
 
-    footer {
-        font-size: 2vw; /* Ajuste de tamaño de fuente para tablets */
+    .copyright {
+        width: 100%;
+        color: white;
+        text-align: center;
+        font-style: italic;
+        background-color: #0f0f0f;
+        background-size: cover;
+        border-top: 1px solid white; 
+        position: fixed; 
+        bottom: 0; 
+        right: 0;
+        z-index: 998;
     }
-}
