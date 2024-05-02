@@ -461,8 +461,6 @@ body, h1, h2, p, ul, li {
 /**************************************************** Footer *********************************************************/
     .container {
         width: 100%;
-        margin-top: 15px;
-        display: grid;
         gap: 0.4em;
         grid-template-columns: repeat(4, 2fr);
         background-color: #0f0f0f;
@@ -475,9 +473,9 @@ body, h1, h2, p, ul, li {
         left: 0;
         right: 0;
         z-index: 998;
+        margin-top: 10px;
         margin-bottom: 10px;  
-        padding-top: 10px;
-        padding-bottom: 20px;
+        padding-top: 10px;;
     }
 
     footer {
