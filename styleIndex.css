@@ -283,6 +283,18 @@ body, h1, h2, p, ul, li {
     } 
 }
 
+    .grid-container {
+      bottom: 0;
+      font-size: small;
+      position: relative;
+}
+
+    .copyright {
+      font-size: x-small;
+      bottom: 0;
+      position: relative;
+}
+
 /************************************************** Notebooks ****************************************************/
 @media only screen and (min-width: 850px)  {
     header {
