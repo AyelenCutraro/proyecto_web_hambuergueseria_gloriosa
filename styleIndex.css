@@ -207,7 +207,13 @@ body, h1, h2, p, ul, li {
     
     .fa-instagram:hover {
         color: blue;
-      }    
+      } 
+        
+    /* Título Gloriosa Burgers */
+    .bungee-regularspice- {
+        margin-bottom: 5px;
+        font-size: 5.2vw; 
+    }
     
     body {
         /* Títulos del nav */
@@ -223,11 +229,11 @@ body, h1, h2, p, ul, li {
     
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
-        margin-top: -30px;
+        margin-top: -20px;
         margin-left: 10px;
-        font-size: 2.3vw;
+        font-size: 3vw;
         text-align: center;
-        color:black;
+        color: gold;
     }
 
     /* Títulos del menú */
@@ -238,11 +244,11 @@ body, h1, h2, p, ul, li {
         min-width: 52vw;
         max-width:min-content;
         text-align: center;
-        color: black;
+        color: white;
         margin-top: 10px;
         margin-left: 10px;
         margin-bottom: 5px;
-        background-color: transparent; /* Cambiado a transparente */
+        background-color: rgb(37, 102, 37, 0.5);
         border-radius: 40%;
         border-bottom-style:dotted;
         transition: transform 0.5s ease-in-out;
@@ -271,8 +277,8 @@ body, h1, h2, p, ul, li {
     }
     .section:hover {
         transform: scale(1.05) translateY(-10px);
-        color: white;
-        background-color: rgb(132, 4, 136); 
+        color: black;
+        background-color: rgb(189, 63, 4); 
         border-bottom-style:dotted;
     } 
 }
