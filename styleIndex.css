@@ -79,7 +79,8 @@ body, h1, h2, p, ul, li {
         font-family: "Chicle", serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 4vw;
+        color: gold;
+        
       }
 
     /* Títulos del menú */
@@ -116,14 +117,10 @@ body, h1, h2, p, ul, li {
     .section2 {
         font-size:3vw;
         color:gold;
-        padding: 10px 10px;
         width: 50vW;
         min-width: 65vw;
         max-width:min-content;
         text-align: center;
-        margin-top: -5px;
-        margin-left: -30px;
-        margin-bottom: -15px;
     }
 
     .section:hover {
@@ -138,6 +135,7 @@ body, h1, h2, p, ul, li {
 @media only screen and (min-width: 401px) and (max-width: 850px)  {
     header {
         background-color: rgba(97, 3, 42);
+        background-size: cover;
         text-align: center;
         width: 100%;
         padding-top: 10px;
@@ -425,9 +423,8 @@ body, h1, h2, p, ul, li {
 .container {
     width: 100%;
     margin-top: auto;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: repeat(3, 1fr);
+    display: flexbox;
+    flex-direction: column;
     background-color: #0f0f0f;
     color: white;
     text-align: center;
@@ -438,6 +435,7 @@ body, h1, h2, p, ul, li {
   
   footer {
     background-color: #0f0f0f;
+    background-size: cover;
     font-size: 1.5vw;
   }
   
