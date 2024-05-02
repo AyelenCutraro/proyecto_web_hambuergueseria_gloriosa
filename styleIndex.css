@@ -63,26 +63,10 @@ body, h1, h2, p, ul, li {
         color: blue;
     }
 
-    /* Fuentes */
-    .kalam-regular {
-        font-family: "Kalam", cursive;
-        font-weight: 400;
-        font-style: normal;
-    }
-    
-    .kalam-bold {
-        font-family: "Kalam", cursive;
-        font-weight: 700;
-        font-style: normal;
-    }  
-    
     /* Título Gloriosa Burgers */
     .bungee-regularspice- {
         margin-bottom: 5px;
-        font-family: "Bungee Spice", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 8vw;
+        font-size: 8vw; 
     }
 
     body {
@@ -97,11 +81,11 @@ body, h1, h2, p, ul, li {
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
-        /*padding-top: 100px; /* Para evitar que el contenido se oculte detrás del header */
+        padding-top: 100px; /* Para evitar que el contenido se oculte detrás del header */
     }
 
     /* Título Bienvenido a Gloriosa Burgers! */
-    .section1 {
+    .section1{
         color: gold;
         text-align: center;
         margin-top: 40px;
@@ -434,6 +418,12 @@ body {
   font-weight: 400;
   font-style:normal;
 }
+.chicle-regular {
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: oblique;
+}
+
 
 /**************************************************** Footer *********************************************************/
 .grid-container {
