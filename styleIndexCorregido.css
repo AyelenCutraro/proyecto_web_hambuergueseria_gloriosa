@@ -149,10 +149,6 @@ body, h1, h2, p, ul, li {
 
     }
 
-    /*.section1 {
-        text-align: center;
-    }*/
-
     .section:hover {
         transform: scale(1.05) translateY(-10px);
         transition: transform 0.3s ease;
@@ -462,7 +458,7 @@ body, h1, h2, p, ul, li {
     .container {
         width: 100%;
         gap: 0.4em;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: repeat(3, 3fr);
         background-color: #0f0f0f;
         background-size: cover;
         color: white;
