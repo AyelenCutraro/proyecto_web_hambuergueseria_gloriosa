@@ -197,7 +197,7 @@ body, h1, h2, p, ul, li {
         border-top: 1px solid white; 
         position:fixed; /* Para enviar el footer al fondo */
         bottom: 0; /* Lo fija en la parte inferior */
-        left: 0;
+        left: -10;
         right: 0;
         z-index: 998; /* Por debajo del header */
 
