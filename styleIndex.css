@@ -7,9 +7,9 @@ body, h1, h2, p, ul, li {
 @media only screen and (max-width: 650px) {
 
     header {
-        position: absolute;
-        top:0;
         padding: 10px;
+        position: fixed;
+        top:0;
         background-color: rgba(97, 3, 42);
         width: 100%;
         text-align: center;
@@ -35,17 +35,17 @@ body, h1, h2, p, ul, li {
         transition: color 0.3s, text-decoration 0.3s;
         font-style: oblique;
         margin-bottom: 7px;
-        /*padding: 5px;*/
+        padding: 3px;
     }
 
     nav ul li a:hover {
-        color: blue;
+        color: blue; /* Cambia el color al pasar el mouse */
     }
 
     /* Favicon de Facebook */
     .fa-facebook-square {
         color: white;
-        padding-right: 5px;
+        padding-right: 3px;
     }
     
     .fa-facebook-square:hover {
@@ -72,16 +72,18 @@ body, h1, h2, p, ul, li {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/paraCelular.png);
         background-size: cover;
+        height: 50vh;
         color: black;
-        padding-top: 80px; /* Para evitar que el contenido se oculte detrás del header */
+        min-height: 100vh;
+        overflow-x: hidden;
+        padding-top: 100px; /* Para evitar que el contenido se oculte detrás del header */
     }
 
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1{
-        color: black;
+        color: gold;
         text-align: center;
         font-size: 5vw;
-        margin-bottom: 50px;
     }
 
     .opciones{
@@ -90,7 +92,7 @@ body, h1, h2, p, ul, li {
 
     /* Título Qué te gustaría? */
     .section2 {
-        color: rgb(253, 249, 3);
+        color: rgb(169, 212, 247);
         padding: 10px 10px;
         text-align: center;
         font-size: 6vw;
