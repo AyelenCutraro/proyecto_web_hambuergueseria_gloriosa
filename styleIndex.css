@@ -122,7 +122,7 @@ body, h1, h2, p, ul, li {
         border: none; /* Añadido para eliminar el borde del botón */
     }
     .opciones {
-        font-size: medium;
+        font-size: small;
     }
 
     /* Añadido para hacer el botón transparente */
