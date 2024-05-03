@@ -70,11 +70,8 @@ body, h1, h2, p, ul, li {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         background-image: url(./assets/Imagenes/fondos/paraCelular.png);
         background-size: cover;
-      /*  height: 50vh;*/
+        height: 50vh;
         color: black;
-/*background-attachment: fixed;
-        /*display: flex;
-        flex-direction: column;*/
         min-height: 100vh;
         overflow-x: hidden;
         padding-top: 100px; /* Para evitar que el contenido se oculte detrás del header */
@@ -89,7 +86,6 @@ body, h1, h2, p, ul, li {
 
     .opciones{
         margin-bottom: 110px;
-        font-size: small;
     }
 
     /* Título Qué te gustaría? */
@@ -104,7 +100,7 @@ body, h1, h2, p, ul, li {
     .section {
         text-align: center;
         display: grid;
-        gap: 0.5em;
+        gap: 20px;
         grid-template-rows: repeat(2, 1fr);
         padding: 15px 15px;
         width: 20vW;
@@ -114,7 +110,7 @@ body, h1, h2, p, ul, li {
         color: white;
         margin-top: 20px;
         margin-bottom: 20px;
-        background-color:rgba(7, 153, 179, 0.6); /* Cambiado a transparente */
+        background-color:rgba(7, 153, 179, 0.6); 
         border-radius: 40%;
         transition: transform 0.5s ease-in-out;
         border: none; /* Añadido para eliminar el borde del botón */
@@ -140,8 +136,7 @@ body, h1, h2, p, ul, li {
         right: 0;
         font-size: small;
         position: relative;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        padding-top: 20px;
     }
 
     .copyright {
@@ -283,21 +278,21 @@ body, h1, h2, p, ul, li {
         background-color: rgb(57, 196, 184); 
         border-bottom-style:dotted;
     } 
-}
 
-.opciones{
-    margin-bottom: 80px;
-}
+    .opciones{
+        margin-bottom: 80px;
+    }
+     
+        .grid-container {
+          font-size: small;
+          position: relative;
+    }
+    
+        .copyright {
+          font-size: x-small;
+          position: relative;
+    }
 
-
-    .grid-container {
-      font-size: small;
-      position: relative;
-}
-
-    .copyright {
-      font-size: x-small;
-      position: relative;
 }
 
 /************************************************** Notebooks ****************************************************/
@@ -423,16 +418,17 @@ body {
         margin-bottom: 180px;
     }
 
-}
-.grid-container {
-    font-size: x-large;
-    position: relative;
-}
+    .grid-container {
+        font-size: x-large;
+        position: relative;
+    }
+    
+      .copyright {
+        font-size: large;
+        bottom: 0;
+        position: relative;
+    } 
 
-  .copyright {
-    font-size: large;
-    bottom: 0;
-    position: relative;
 }
 
 /* Fuentes */
@@ -471,7 +467,6 @@ body {
     color: white;
     text-align: center;
     font-style: italic;
-    font-size: 1.5vw; /* Ajustado el tamaño de letra */
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -479,7 +474,6 @@ body {
   footer {
     background-color: #0f0f0f;
     color: white;
-    font-size: 1.5vw;
   }
   
   .copyright {
@@ -490,5 +484,4 @@ body {
     background-color: #0f0f0f;
     border-top: 2px solid white;
     padding: 10px 0;
-    font-size: 1.2vw; /* Igualado el tamaño de letra */
   }
