@@ -72,7 +72,7 @@ body, h1, h2, p, ul, li {
         background-size: cover;
       /*  height: 50vh;*/
         color: black;
-/*background-attachment: fixed;*/
+/*background-attachment: fixed;
         /*display: flex;
         flex-direction: column;*/
         min-height: 100vh;
@@ -88,7 +88,7 @@ body, h1, h2, p, ul, li {
     }
 
     .opciones{
-        margin-bottom: 80px;
+        margin-bottom: 90px;
         font-size: small;
     }
 
@@ -114,6 +114,7 @@ body, h1, h2, p, ul, li {
         color: white;
         margin-top: 20px;
         margin-bottom: 20px;
+        background-color:rgba(7, 153, 179, 0.6); /* Cambiado a transparente */
         border-radius: 40%;
         transition: transform 0.5s ease-in-out;
         border: none; /* Añadido para eliminar el borde del botón */
