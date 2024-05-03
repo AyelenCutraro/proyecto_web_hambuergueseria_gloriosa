@@ -79,7 +79,7 @@ body, h1, h2, p, ul, li {
 
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1{
-        color: gold;
+        color: black;
         text-align: center;
         font-size: 5vw;
     }
@@ -90,7 +90,7 @@ body, h1, h2, p, ul, li {
 
     /* Título Qué te gustaría? */
     .section2 {
-        color: rgb(4, 139, 250);
+        color: gold;
         padding: 10px 10px;
         text-align: center;
         font-size: 6vw;
