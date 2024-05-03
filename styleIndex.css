@@ -86,7 +86,6 @@ body, h1, h2, p, ul, li {
 
     .opciones{
         margin-bottom: 110px;
-        font-size: large;
     }
 
     /* Título Qué te gustaría? */
@@ -101,13 +100,14 @@ body, h1, h2, p, ul, li {
     .section {
         text-align: center;
         display: grid;
-        gap: 0.5em;
+        gap: 20px;
         grid-template-rows: repeat(2, 1fr);
         padding: 15px 15px;
         width: 20vW;
         min-width: 90vw;
         max-width: max-content;
         text-align: center;
+        font-size: large;
         color: white;
         margin-top: 20px;
         margin-bottom: 20px;
