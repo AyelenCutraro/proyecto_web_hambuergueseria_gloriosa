@@ -138,14 +138,14 @@ body, h1, h2, p, ul, li {
     .grid-container {
         bottom: 0;
         right: 0;
-        font-size: small;
+        font-size: large;
         position: relative;
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
     .copyright {
-        font-size: x-small;
+        font-size: medium;
         bottom: 0;
         right:0;
         position: relative;
