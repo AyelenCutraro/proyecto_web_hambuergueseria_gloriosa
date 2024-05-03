@@ -34,7 +34,6 @@ body, h1, h2, p, ul, li {
         color: white;
         transition: color 0.3s, text-decoration 0.3s;
         font-style: oblique;
-        margin-right: 5px;
         margin-bottom: 10px;
     }
 
@@ -45,7 +44,6 @@ body, h1, h2, p, ul, li {
     /* Favicon de Facebook */
     .fa-facebook-square {
         color: white;
-        margin-right: 5px;
     }
     
     .fa-facebook-square:hover {
