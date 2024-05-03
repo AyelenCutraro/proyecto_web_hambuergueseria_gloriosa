@@ -283,15 +283,18 @@ body, h1, h2, p, ul, li {
     } 
 }
 
+.opciones{
+    margin-bottom: 80px;
+}
+
+
     .grid-container {
-      bottom: 0;
       font-size: small;
       position: relative;
 }
 
     .copyright {
       font-size: x-small;
-      bottom: 0;
       position: relative;
 }
 
@@ -412,7 +415,11 @@ body {
         color: black;
         background-color: rgb(198, 240, 9); 
         border-bottom-style:dotted;
-    }  
+    } 
+    
+    .opciones{
+        margin-bottom: 180px;
+    }
 
 }
 .grid-container {
