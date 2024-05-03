@@ -89,6 +89,7 @@ body, h1, h2, p, ul, li {
 
     /* Título Qué te gustaría? */
     .section2 {
+        margin-top: 10px;
         color: rgb(253, 249, 3);
         padding: 10px 10px;
         text-align: center;
