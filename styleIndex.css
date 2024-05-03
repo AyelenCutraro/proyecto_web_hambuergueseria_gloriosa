@@ -9,7 +9,7 @@ body, h1, h2, p, ul, li {
     header {
         position: absolute;
         top:0;
-        padding: 5px;
+        padding: (0, 5px, 0, 0);
         background-color: rgba(97, 3, 42);
         width: 100%;
         text-align: center;
