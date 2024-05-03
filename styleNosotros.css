@@ -192,7 +192,7 @@ nav ul li a:hover {
   width: 100%;
   margin-top: auto;
   display: grid;
-  gap: 1.6em;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   background-color: #0f0f0f;
   color: white;
