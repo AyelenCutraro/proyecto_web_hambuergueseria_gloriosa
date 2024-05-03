@@ -140,6 +140,8 @@ body, h1, h2, p, ul, li {
         right: 0;
         font-size: small;
         position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .copyright {
