@@ -134,7 +134,7 @@ body, h1, h2, p, ul, li {
     .grid-container {
         bottom: 0;
         right: 0;
-        font-size: large;
+        font-size: small;
         position: relative;
         margin-top: 20px;
         margin-bottom: 10px;
@@ -419,16 +419,17 @@ body {
         margin-bottom: 180px;
     }
 
-}
-.grid-container {
-    font-size: x-large;
-    position: relative;
-}
+    .grid-container {
+        font-size: x-large;
+        position: relative;
+    }
+    
+      .copyright {
+        font-size: large;
+        bottom: 0;
+        position: relative;
+    } 
 
-  .copyright {
-    font-size: large;
-    bottom: 0;
-    position: relative;
 }
 
 /* Fuentes */
@@ -484,5 +485,4 @@ body {
     background-color: #0f0f0f;
     border-top: 2px solid white;
     padding: 10px 0;
-    font-size: 1.2vw; /* Igualado el tamaño de letra */
   }
