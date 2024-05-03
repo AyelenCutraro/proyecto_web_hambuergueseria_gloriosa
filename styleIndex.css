@@ -121,6 +121,9 @@ body, h1, h2, p, ul, li {
         transition: transform 0.5s ease-in-out;
         border: none; /* Añadido para eliminar el borde del botón */
     }
+    .opciones {
+        font-size: medium;
+    }
 
     /* Añadido para hacer el botón transparente */
     .reservar, .retirar, .enviar {
