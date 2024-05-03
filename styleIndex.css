@@ -68,7 +68,7 @@ body, h1, h2, p, ul, li {
     body {
         /* Títulos del nav */
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-image: url(./assets/Imagenes/fondos/enFlamas.jpg);
+        background-image: url(./assets/Imagenes/fondos/paraCelular.png);
         background-size: cover;
         height: 50vh;
         color: black;
