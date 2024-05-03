@@ -141,7 +141,7 @@ body, h1, h2, p, ul, li {
     }
 
     .copyright {
-        font-size: medium;
+        font-size: x-small;
         bottom: 0;
         right:0;
         position: relative;
@@ -279,21 +279,21 @@ body, h1, h2, p, ul, li {
         background-color: rgb(57, 196, 184); 
         border-bottom-style:dotted;
     } 
-}
 
-.opciones{
-    margin-bottom: 80px;
-}
+    .opciones{
+        margin-bottom: 80px;
+    }
+     
+        .grid-container {
+          font-size: small;
+          position: relative;
+    }
+    
+        .copyright {
+          font-size: x-small;
+          position: relative;
+    }
 
-
-    .grid-container {
-      font-size: small;
-      position: relative;
-}
-
-    .copyright {
-      font-size: x-small;
-      position: relative;
 }
 
 /************************************************** Notebooks ****************************************************/
