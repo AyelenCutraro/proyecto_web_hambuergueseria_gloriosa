@@ -34,8 +34,8 @@ body, h1, h2, p, ul, li {
         color: white;
         transition: color 0.3s, text-decoration 0.3s;
         font-style: oblique;
-        margin-bottom: 10px;
-        padding: 2px;
+        margin-bottom: 7px;
+        padding: 3px;
     }
 
     nav ul li a:hover {
@@ -45,7 +45,7 @@ body, h1, h2, p, ul, li {
     /* Favicon de Facebook */
     .fa-facebook-square {
         color: white;
-        padding-left: 2px;
+        padding-right: 3px;
     }
     
     .fa-facebook-square:hover {
