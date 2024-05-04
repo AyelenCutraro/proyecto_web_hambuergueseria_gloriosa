@@ -1,5 +1,97 @@
+  body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuentes */
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+}  
+
+.bungee-regularspice- {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+}
+
+.chicle-regular {
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
+/*********************************************** HEADER *******************************************************/
+header {
+  background-color: rgba(97, 3, 42);
+  text-align: center;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5vw;
+  transition: color 0.3s, text-decoration 0.3s;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-style: normal;
+}
+
+nav ul li a:hover {
+  color: blue; 
+  text-decoration: none;
+}
+
+/* ICONOS */
+
+/* Favicon de Facebook */
+.fa-facebook-square {
+  font-size: 2vw;
+  color: white; 
+}
+
+.fa-facebook-square:hover {
+  color: blue;
+}
+
+/* Favicon de Instagram */
+.fa-instagram{
+  font-size: 2vw; 
+  color: white;
+}
+
+.fa-instagram:hover {
+  color: blue;
+}
+    
  /* Background pattern */
  body {
     --s: 150px; /* control the size */
@@ -94,3 +186,59 @@
         grid-column: 1/-1;
     }
 }
+
+/************************************************ Footer *********************************************************/
+.container {
+  width: 100%;
+  margin-top: auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #0f0f0f;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5vw; /* Ajustado el tamaño de letra */
+  padding: 20px;
+}
+
+footer {
+  background-color: #0f0f0f;
+  font-size: 1.5vw;
+}
+
+.copyright {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  background-color: #0f0f0f;
+  border-top: 2px solid white;
+  padding: 10px 0;
+  font-size: 1.2vw; /* Igualado el tamaño de letra */
+}
+
+/* Celulares */
+@media only screen and (max-width: 650px) {
+  .container {
+    font-size: 2.5vw;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+  }
+
+  .copyright {
+    font-size: 1.5vw;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+  .container {
+    font-size: 2vw;
+  }
+
+  .copyright {
+    font-size: 1.5vw;
+  }
+}
+
