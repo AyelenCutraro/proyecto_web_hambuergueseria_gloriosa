@@ -193,6 +193,10 @@ form {
   max-height: 100%; /* Ajusta al alto del contenedor */
 }
 
+.botonera{
+align-items: center;
+}
+
 }
 /*------------------------ NOTEBOOKS -------------------------*/
 @media only screen and (min-width: 850px)  {
