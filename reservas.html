@@ -1,97 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css"> <!-- Cargo Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="styleReserva.css">
+    <!-- Referencias locales -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <script src="./assets/js/bootstrap.js"></script> <!-- Cargo JavaScript-->
-    <title>Reserva</title>
+    <link rel="stylesheet" type="text/css" href="styleReserva.css"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+    <style>
+        /* Estilo para el contenedor principal */
+        .container-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
+            gap: 20px; /* Espacio entre columnas */
+            padding: 20px;
+        }
+
+        /* Estilo para el formulario */
+        form {
+            max-width: 100%; /* Ajusta al ancho del contenedor */
+        }
+
+        /* Estilo para la imagen */
+        .image-container {
+            text-align: center; /* Centra la imagen */
+        }
+
+        .image-container img {
+            max-width: 100%; /* Ajusta al ancho del contenedor */
+            max-height: 100%; /* Ajusta al alto del contenedor */
+        }
+    </style>
+    <title>Ejemplo Formularios</title>
 </head>
+<header>
+    <h1 class="bungee-regularspice-">Gloriosa Burgers</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./novedades.html">Novedades</a></li>
+            <li><a href="./reservas.html">Reservas</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><i class="fab fa-facebook-square"></i></li> 
+            <i class="fab fa-instagram"></i>
+        </ul>
+    </nav>
+</header> 
 <body>
-    <header>
-        <h1 class="bungee-regularspice-">Gloriosa Burgers</h1>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/novedades.html">Novedades</a></li>
-                <li><a href="/nosotros.html">Nosotros</a></li>
-                <li><i class="fab fa-facebook-square"></i></li> 
-                <i class="fab fa-instagram"></i>
-            </ul>
-        </nav>
-    </header>
-    <section id="seccionReserva" class="section1">
-        <p class="kalam-bold">Hacé tu reserva aquí...</p>
-    </section>
-    <div class="reserva">
-        <form action="#" method="get" name="formularioContacto"> <!-- En action me falta la ruta a donde quiero que se envíe mi formulario -->
-            <label for="nombre"><b>Nombre:</b></label>
-            <input type="text" name="nombre" id="nombre" required > 
-            <br><br>
-            <label for="apellido"><b>Apellido:</b></label>
-            <input type="text" name="apellido" id="apellido" required> 
-            <br><br>
-            <label for="telefono"><b>Teléfono:</b></label>
-            <input type="tel" name="telefono" id="telefono" required>
-            <br><br>
-            <label for="email"><b>Correo electrónico:</b></label>
-            <input type="email" name="email" id="email" required> 
-            <br><br>
-            <label for="fecha"><b>Elija la fecha:</b></label>
-            <input type="date" name="fecha" id="fecha" required>
-            <br><br>
-            <label for="cantPers"><b>Cantidad de personas:</b></label>
-            <select name="cantPers" id="cantPers" required>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-            </select>
-            <br><br>
-            <label class="menores" for="menores"><b>Entre las personas hay menores?: </b></label>
-            <input type="radio" name="rbMenor" value="1" required> 
-            <br><br>
-            <input class="restablecer" type="reset"></button> 
-            <button class="cancelacion">Cancelación</button>
-            <input class="enviar" type="submit"></button>
-        </form>
+    <div class="titulo">
+    <h1 class="kalam-bold">Hacé tu reserva aquí...</h1>
     </div>
-    <footer>
-        <div class="container">
-                <div class="item kalam-regular">Preguntas frecuentes</div>
-                <div class="item kalam-regular">Sucursales</div>
-                <div class="item kalam-regular">Quienes somos?</div>
-                <div class="item kalam-regular">Libro de quejas</div>
-                <div class="item kalam-regular">Asuntos Legales</div>
-                <div class="item kalam-regular">Novedades</div> 
-                <div class="item kalam-regular">Contacto</div>  
-                <div class="item kalam-regular">Servicios</div> 
-                <div class="item kalam-regular">Políticas de privacidad</div>          
-        </div>      
-        <div class="copyright kalam-regular">&copy; 2024 Gloriosa Burgers. Todos los derechos reservados.</div>
-    </footer>
+    <div class="container-grid">
+        <form>
+             <label for="nombre"><b>Nombre:</b></label>
+                <input type="text"  class="form-control" name="nombre" id="nombre" required > 
+                <label for="apellido"><b>Apellido:</b></label>
+                <input type="text"  class="form-control" name="apellido" id="apellido" required> 
+                <label for="telefono"><b>Teléfono:</b></label>
+                <input type="tel"  class="form-control" name="telefono" id="telefono" required>
+                <label for="email"><b>Correo electrónico:</b></label>
+                <input type="email"  class="form-control" name="email" id="email" required aria-describedby="emailHelp"> 
+                <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico 
+                    con nadie más.</small>
+                <label for="fecha"><b>Elija la fecha:</b></label>
+                <input type="date"  class="form-control" name="fecha" id="fecha" required>
+                <label for="cantPers"><b>Cantidad de personas:</b></label>
+                <select name="cantPers"  class="form-control" id="cantPers" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                </select>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1"><b>Entre las personas hay menores?</b></label>
+            </div>
+            <button type="reset" class="btn btn-primary">Restablecer</button>
+            <button type="submit" class="btn btn-primary">Cancelar reservación</button>
+            <button type="submit" class="btn btn-primary">Confirmar y enviar</button>
+        </form>
+        <div class="image-container">
+            <img src="./assets/Imagenes/reservas/reserva.png" alt="reserva.png">
+        </div>
+    </div>
 </body>
+<footer>
+    <div class="container">
+            <div class="item kalam-regular">Preguntas frecuentes</div>
+            <div class="item kalam-regular">Sucursales</div>
+            <div class="item kalam-regular">Quienes somos?</div>
+            <div class="item kalam-regular">Libro de quejas</div>
+            <div class="item kalam-regular">Novedades</div> 
+            <div class="item kalam-regular">Contacto</div>  
+            <div class="item kalam-regular">Asuntos Legales</div>
+            <div class="item kalam-regular">Servicios</div> 
+            <div class="item kalam-regular">Políticas de privacidad</div>          
+    </div>      
+    <div class="copyright kalam-regular">&copy; 2024 Gloriosa Burgers. Todos los derechos reservados.</div>
+</footer>
 </html>
-
-
