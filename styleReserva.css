@@ -49,8 +49,8 @@
       color: white;
       transition: color 0.3s, text-decoration 0.3s;
       font-style: oblique;
-      margin-bottom: 7px;
       padding: 5px;
+      padding-left: -10px;
       font-size: small;
   }
 
@@ -84,26 +84,26 @@
   }
 
    /* Estilo para el contenedor principal */
-   .container-grid {
+  .container-grid {
     flex-grow:1;
     gap: 20px; /* Espacio entre columnas */
     padding: 20px;
-}
+  }
 
 /* Estilo para el formulario */
-form {
+  form {
     max-width: 100%; /* Ajusta al ancho del contenedor */
-}
+  }
 
 /* Estilo para la imagen */
-.image-container {
+  .image-container {
     text-align: center; /* Centra la imagen */
-}
+  }
 
-.image-container img {
+  .image-container img {
     max-width: 100%; /* Ajusta al ancho del contenedor */
     max-height: 100%; /* Ajusta al alto del contenedor */
-}
+  }
 }
 
 /*------------------------ TABLETS -------------------------*/
