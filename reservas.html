@@ -16,30 +16,7 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
     </script>
-    <style>
-        /* Estilo para el contenedor principal */
-        .container-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
-            gap: 20px; /* Espacio entre columnas */
-            padding: 20px;
-        }
 
-        /* Estilo para el formulario */
-        form {
-            max-width: 100%; /* Ajusta al ancho del contenedor */
-        }
-
-        /* Estilo para la imagen */
-        .image-container {
-            text-align: center; /* Centra la imagen */
-        }
-
-        .image-container img {
-            max-width: 100%; /* Ajusta al ancho del contenedor */
-            max-height: 100%; /* Ajusta al alto del contenedor */
-        }
-    </style>
     <title>Ejemplo Formularios</title>
 </head>
 <header>
@@ -51,7 +28,7 @@
             <li><a href="./reservas.html">Reservas</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
             <li><i class="fab fa-facebook-square"></i></li> 
-            <i class="fab fa-instagram"></i>
+            <li><i class="fab fa-instagram"></i></li>
         </ul>
     </nav>
 </header> 
@@ -62,17 +39,22 @@
     <div class="container-grid">
         <form>
              <label for="nombre"><b>Nombre:</b></label>
-                <input type="text"  class="form-control" name="nombre" id="nombre" required > 
+                <input type="text"  class="form-control" name="nombre" id="nombre" required >
+                <br> 
                 <label for="apellido"><b>Apellido:</b></label>
-                <input type="text"  class="form-control" name="apellido" id="apellido" required> 
+                <input type="text"  class="form-control" name="apellido" id="apellido" required>
+                <br>  
                 <label for="telefono"><b>Teléfono:</b></label>
                 <input type="tel"  class="form-control" name="telefono" id="telefono" required>
+                <br> 
                 <label for="email"><b>Correo electrónico:</b></label>
                 <input type="email"  class="form-control" name="email" id="email" required aria-describedby="emailHelp"> 
                 <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico 
                     con nadie más.</small>
+                <br> 
                 <label for="fecha"><b>Elija la fecha:</b></label>
                 <input type="date"  class="form-control" name="fecha" id="fecha" required>
+                <br> 
                 <label for="cantPers"><b>Cantidad de personas:</b></label>
                 <select name="cantPers"  class="form-control" id="cantPers" required>
                     <option>1</option>
@@ -96,13 +78,16 @@
                     <option>19</option>
                     <option>20</option>
                 </select>
+                <br> 
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1"><b>Entre las personas hay menores?</b></label>
             </div>
+            <br>
             <button type="reset" class="btn btn-primary">Restablecer</button>
             <button type="submit" class="btn btn-primary">Cancelar reservación</button>
             <button type="submit" class="btn btn-primary">Confirmar y enviar</button>
+            <br><br>
         </form>
         <div class="image-container">
             <img src="./assets/Imagenes/reservas/reserva.png" alt="reserva.png">

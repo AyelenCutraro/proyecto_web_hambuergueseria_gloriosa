@@ -150,6 +150,29 @@
 }
 /*------------------------ NOTEBOOKS -------------------------*/
 @media only screen and (min-width: 850px)  {
+  /* Estilo para el contenedor principal */
+  .container-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
+      gap: 20px; /* Espacio entre columnas */
+      padding: 20px;
+  }
+
+  /* Estilo para el formulario */
+  form {
+      max-width: 100%; /* Ajusta al ancho del contenedor */
+  }
+
+  /* Estilo para la imagen */
+  .image-container {
+      text-align: center; /* Centra la imagen */
+  }
+
+  .image-container img {
+      max-width: 100%; /* Ajusta al ancho del contenedor */
+      max-height: 100%; /* Ajusta al alto del contenedor */
+  }
+
   header {
       background-color: rgba(97, 3, 42);
       text-align: center;
@@ -161,9 +184,14 @@
       color: white;
   }
   
+  nav{
+    padding-bottom: 5px;
+  }
+
   nav ul {
       list-style-type: none;
       margin-top: 5px;
+
   }
   
   nav ul li {
@@ -203,7 +231,12 @@
   .fa-instagram:hover {
       color: blue;
     }
+
+    .titulo{
+      padding-top: 10px;
+    }
 }
+
 /***********************************************FIN HEADER**************************************************/
 
 .image-container {
@@ -211,6 +244,7 @@
     width: 100%;
     margin-top: 5px;
 }
+
 body{
   background-color: black;
   color: rgb(5, 212, 143);
@@ -220,12 +254,21 @@ h1 {
 }
 }
 
-
 @media screen and (max-width: 768px) {
     .image-container {
         grid-column: 1 / -1;
     }
+
+  .container-grid {
+      grid-column: 5 / 6;
+  }
+
+/*  .contenedor>.related-post {
+      grid-column: 1/-1;
+  }*/
+
 }
+
 .container {
   width: 100%;
   margin-top: auto;
