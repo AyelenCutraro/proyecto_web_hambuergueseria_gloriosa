@@ -1,98 +1,23 @@
-/* Reset de estilos */
-body, h1, h2, p, ul, li, label, input, button {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url(./assets/Imagenes/fondos/reserva.png);
-  font-size: 1.5vw;
-  color: gold;
-
-  .reserva {
-      margin-left: 30px;
-      margin-bottom: 20px;
-  }
-  
-/* Título Hacé tu reserva aquí... */
-.section1 {
-  color:gold;
-  font-size: 2vw;
-  padding-left: 60px;
-  margin-bottom: 10px;
-}
-
-.menores {
-margin-right: 5px;
-}
- }
-
-label, input[type="radio"], button, input[type="text"], input[type="email"], input[type="reset"], input[type="submit"], input[type="date"] {
-  font-size: 1.5vw;
-}
-
-input[type="text"], input[type="email"] {
-  width: auto; 
-}
-
-input[type="radio"] {
-  transform: scale(1.5); 
-}
-
-/* Estilo para los botones */
-.restablecer {
-  padding: 5px;
-  border: inset;
-  border-width: 1px 8px 1px 5px;
-  background-color: rgb(12, 12, 12);
-  border-radius: 30%;
-  border-color: darkolivegreen;
-  color: white;
-  margin-left:50px;
-  margin-right: 10px;
-}
-
-.enviar {
-padding: 5px;
-border: inset;
-border-width: 1px 8px 1px 5px;
-background-color: rgb(12, 12, 12);
-border-radius: 30%;
-border-color: darkolivegreen;
-color: white;
-margin-right: 10px;
-
-}
-
-.cancelacion {
-  padding: 5px;
-  border: inset;
-  border-width: 1px 8px 1px 5px;
-  background-color: rgb(12, 12, 12);
-  border-radius: 30%;
-  border-color: darkolivegreen;
-  color: white;
-  margin-right: 10px;
-}
-
 /* Fuentes */
 .bungee-regularspice- {
-  font-family: "Bungee Spice", sans-serif;
-  font-weight: 400;
-  font-style:normal;
-  font-size:2vw;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size:3vw;
 }
 
 .kalam-regular {
   font-family: "Kalam", cursive;
   font-weight: 400;
-  font-style: normal;
-  margin-left: 20px;
+  font-style: italic;
+  color: white;
 }
 
 .kalam-bold {
   font-family: "Kalam", cursive;
   font-weight: 700;
+  font-style: italic;
+  padding-left: 20px
 }  
 
 header {
@@ -129,12 +54,13 @@ nav ul li a {
 
 nav ul li a:hover {
   color: blue; /* Cambia el color al pasar el mouse */
+  text-decoration: none;
 }
 
 /* Favicon de Facebook */
 .fa-facebook-square {
-  font-size: 2vw; 
-  color: white;
+  font-size: 2vw;
+  color: white; 
 }
 
 .fa-facebook-square:hover {
@@ -151,12 +77,35 @@ nav ul li a:hover {
   color: blue;
 }
 
-/************************************************ Footer *********************************************************/
+.image-container {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+body{
+  background-color: black;
+  color: rgb(5, 212, 143);
+  
+h1 {
+  color: gold;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+        font-size: 8vw;
+    }
+    .image-container {
+        grid-column: 1 / -1;
+    }
+}
 .container {
   width: 100%;
   margin-top: auto;
   display: grid;
-  gap: 1.6em;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   background-color: #0f0f0f;
   color: white;
@@ -169,6 +118,7 @@ nav ul li a:hover {
 footer {
   background-color: #0f0f0f;
   font-size: 1.5vw;
+  color: white;
 }
 
 .copyright {
@@ -202,7 +152,7 @@ footer {
   }
 
   .copyright {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 }
 
