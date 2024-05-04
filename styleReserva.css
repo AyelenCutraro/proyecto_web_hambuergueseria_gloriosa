@@ -195,8 +195,8 @@ form {
 
 .botonera {
 display: grid;
-grid-template-columns: 1fr 1fr;
-gap:5px;
+grid-template-columns: 4fr 1fr;
+gap:20px;
 }
 
 }
