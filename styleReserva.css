@@ -107,7 +107,7 @@ form {
 }
 
 /*------------------------ TABLETS -------------------------*/
-  @media only screen and (min-width: 778px) and (max-width: 850px)  {
+  @media only screen and (min-width: 651px) and (max-width: 778px)  {
     header {
         background-color: rgba(97, 3, 42);
         background-size: cover;
