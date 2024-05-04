@@ -3,14 +3,12 @@
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style:normal;
-    font-size:6vw;
 }
 
 .kalam-regular {
   font-family: "Kalam", cursive;
   font-weight: 400;
   font-style: italic;
-  color: white;
 }
 
 .kalam-bold {
@@ -20,62 +18,192 @@
   padding-left: 20px
 }  
 
-header {
-  background-color: rgba(97, 3, 42);
-  text-align: center;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+/****************************************** HEADER ********************************************************/
+@media only screen and (max-width: 650px) {
+
+  header {
+      position: absolute;
+      top:0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: rgba(97, 3, 42);
+      width: 100%;
+      text-align: center;
+  }
+
+  header h1 {
+      color: white;
+  }
+
+  nav ul {
+      list-style-type: none;
+  }
+
+  nav ul li {
+      display: inline;
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s, text-decoration 0.3s;
+      font-style: oblique;
+      margin-bottom: 7px;
+      padding: 5px;
+      font-size: small;
+  }
+
+  nav ul li a:hover {
+      color: blue;
+  }
+
+  /* Favicon de Facebook */
+  .fa-facebook-square {
+      color: white;
+      padding-right: 5px;
+  }
+  
+  .fa-facebook-square:hover {
+      color: blue;
+  }
+
+  /* Favicon de Instagram */
+  .fa-instagram {
+      color: white;
+  }
+
+  .fa-instagram:hover {
+      color: blue;
+  }
+
+  /* Título Gloriosa Burgers */
+  .bungee-regularspice- {
+      margin-bottom: 5px;
+      font-size: 8vw; 
+  }
+}
+  @media only screen and (min-width: 651px) and (max-width: 850px)  {
+    header {
+        background-color: rgba(97, 3, 42);
+        background-size: cover;
+        text-align: center;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    header h1 {
+        color: white;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin-top: 5px;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 2vw;
+        transition: color 0.3s, text-decoration 0.3s;
+        padding: 10px;
+        font-style:oblique;
+    }
+    
+    nav ul li a:hover {
+        color: blue; /* Cambia el color al pasar el mouse */
+    }
+    
+    /* Favicon de Facebook */
+    .fa-facebook-square {
+        font-size: 2vw; 
+        color: white;
+      }
+    
+      .fa-facebook-square:hover {
+        color: blue;
+      }
+    
+    /* Favicon de Instagram */
+    .fa-instagram{
+        font-size: 2vw; 
+        color: white;
+    }
+    
+    .fa-instagram:hover {
+        color: blue;
+      } 
+        
+    /* Título Gloriosa Burgers */
+    .bungee-regularspice- {
+        margin-bottom: 5px;
+        font-size: 5.2vw; 
+    }
 }
 
-header h1 {
-  color: white;
+@media only screen and (min-width: 850px)  {
+  header {
+      background-color: rgba(97, 3, 42);
+      text-align: center;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 15px;
+  }
+  
+  header h1 {
+      color: white;
+  }
+  
+  nav ul {
+      list-style-type: none;
+      margin-top: 5px;
+  }
+  
+  nav ul li {
+      display: inline;
+      margin-right: 20px;
+  }
+  
+  nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5vw;
+      transition: color 0.3s, text-decoration 0.3s;
+      padding: 15px;
+      font-style:oblique;
+  }
+  
+  nav ul li a:hover {
+      color: blue; /* Cambia el color al pasar el mouse */
+  }
+  
+  /* Favicon de Facebook */
+  .fa-facebook-square {
+      font-size: 2vw; 
+      color: white;
+    }
+  
+    .fa-facebook-square:hover {
+      color: blue;
+    }
+  
+  /* Favicon de Instagram */
+  .fa-instagram{
+      font-size: 2vw; 
+      color: white;
+  }
+  
+  .fa-instagram:hover {
+      color: blue;
+    }
 }
-
-nav ul {
-  list-style-type: none;
-  margin-top: 5px;
 }
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5vw;
-  transition: color 0.3s, text-decoration 0.3s;
-  padding: 10px;
-  font-style:oblique;
-}
-
-nav ul li a:hover {
-  color: blue; /* Cambia el color al pasar el mouse */
-  text-decoration: none;
-}
-
-/* Favicon de Facebook */
-.fa-facebook-square {
-  font-size: 2vw;
-  color: white; 
-}
-
-.fa-facebook-square:hover {
-  color: blue;
-}
-
-/* Favicon de Instagram */
-.fa-instagram{
-  font-size: 2vw; 
-  color: white;
-}
-
-.fa-instagram:hover {
-  color: blue;
-}
+/***********************************************FIN HEADER**************************************************/
 
 .image-container {
     display: block;
@@ -93,10 +221,6 @@ h1 {
 
 
 @media screen and (max-width: 768px) {
-    .header {
-        text-align: center;
-        font-size: 8vw;
-    }
     .image-container {
         grid-column: 1 / -1;
     }
