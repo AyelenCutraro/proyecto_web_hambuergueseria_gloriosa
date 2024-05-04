@@ -19,7 +19,8 @@
 }  
 
 /****************************************** HEADER ********************************************************/
-@media only screen and (max-width: 650px) {
+/*---------------------- CELULARES ----------------------------*/
+@media only screen and (max-width: 650px) { 
 
   header {
       position: absolute;
@@ -82,6 +83,8 @@
       font-size: 8vw; 
   }
 }
+
+/*------------------------ TABLETS -------------------------*/
   @media only screen and (min-width: 651px) and (max-width: 850px)  {
     header {
         background-color: rgba(97, 3, 42);
@@ -145,14 +148,13 @@
         font-size: 5.2vw; 
     }
 }
-
+/*------------------------ NOTEBOOKS -------------------------*/
 @media only screen and (min-width: 850px)  {
   header {
       background-color: rgba(97, 3, 42);
       text-align: center;
       width: 100%;
       padding-top: 10px;
-      padding-bottom: 15px;
   }
   
   header h1 {
