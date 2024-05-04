@@ -193,9 +193,9 @@ form {
   max-height: 100%; /* Ajusta al alto del contenedor */
 }
 
-.botonera{
+.botonera {
 display: grid;
-grid-template-columns: 3fr 1fr;
+grid-template-columns: 1fr 1fr;
 gap:20px;
 }
 
