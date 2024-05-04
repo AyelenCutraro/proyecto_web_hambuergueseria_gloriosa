@@ -82,6 +82,28 @@
       margin-bottom: 5px;
       font-size: 8vw; 
   }
+
+   /* Estilo para el contenedor principal */
+   .container-grid {
+    flex-grow:1;
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px;
+}
+
+/* Estilo para el formulario */
+form {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+}
+
+/* Estilo para la imagen */
+.image-container {
+    text-align: center; /* Centra la imagen */
+}
+
+.image-container img {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+    max-height: 100%; /* Ajusta al alto del contenedor */
+}
 }
 
 /*------------------------ TABLETS -------------------------*/
