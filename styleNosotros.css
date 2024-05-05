@@ -189,18 +189,17 @@ nav ul li a:hover {
     /*background: #0f0e0e;*/
     color: #ffffff;
     height: 180px;
-    ;
-    display: flex;s
-    align-items: center;
-    justify-content: center;
+    display: flex;
+   /* align-items: center;
+    justify-content: center;*/
     /* transition: all 0.5s ease;*/
 } 
 
-.contenedor>.related-post:hover {
+/*.contenedor, .related-post: hover {
     cursor: pointer;
     color: #000000;
     background: #ffffff;
-}
+}*/
 
 /* MEDIA QUERIES */
 
@@ -232,7 +231,7 @@ nav ul li a:hover {
   text-align: center;
   font-style: italic;
   font-size: 1.5vw; /* Ajustado el tamaño de letra */
-  padding: 20px;
+  /*padding: 20px;
 }
 
 footer {
