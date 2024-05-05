@@ -4,6 +4,39 @@
 }
 
 /* Fuentes */
+.bungee-regularspice- {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:2vw;;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vW;
+}
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3vW;
+  color: white;
+}  
+
+
+.sedgwick-ave-display-regular {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:yellow;
+  font-size: 4vw;
+  position: relative;
+}
+
+
+/*Fuentes 
 
 .kalam-regular {
   font-family: "Kalam", cursive;
@@ -30,7 +63,7 @@
   font-weight: 400;
   font-style: normal;
 }
-
+*/
 
 /*********************************************** HEADER *******************************************************/
 header {
@@ -139,7 +172,7 @@ nav ul li a:hover {
 .contenedor>.sidebar {
     grid-column: span 2;
     grid-row: span 4;
-    background: rgba(97, 3, 42);
+    background: rgb(250, 247, 248);
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -153,15 +186,15 @@ nav ul li a:hover {
 }
 
 .contenedor>.related-post {
-    background: #2d3436;
+    /*background: #0f0e0e;*/
     color: #ffffff;
     height: 180px;
     ;
-    display: flex;
+    display: flex;s
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease;
-}
+    /* transition: all 0.5s ease;*/
+} 
 
 .contenedor>.related-post:hover {
     cursor: pointer;
@@ -192,7 +225,7 @@ nav ul li a:hover {
   width: 100%;
   margin-top: auto;
   display: grid;
-  gap: 1.6em;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   background-color: #0f0f0f;
   color: white;
@@ -231,7 +264,7 @@ footer {
   }
 }
 
-/* Tablets */
+/*Tablets */
 @media only screen and (min-width: 651px) and (max-width: 1000px) {
   .container {
     font-size: 2vw;
@@ -241,4 +274,5 @@ footer {
     font-size: 1.5vw;
   }
 }
+
 
