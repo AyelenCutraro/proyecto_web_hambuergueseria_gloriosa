@@ -307,6 +307,16 @@ body, h1, h2, p, li, header, footer {
     text-decoration: none;
   }
 
+  main {
+    flex-grow: 1 
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
 /************************************************ Footer *********************************************************/
 footer {
   background-color: #0f0f0f;
