@@ -1,178 +1,96 @@
 /* Fuentes */
 .bungee-regularspice- {
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style:normal;
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style:normal;
 }
 
 .kalam-regular {
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-style: italic;
+font-family: "Kalam", cursive;
+font-weight: 400;
+font-style: italic;
 }
 
 .kalam-bold {
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  font-style: italic;
-  padding-left: 20px
+font-family: "Kalam", cursive;
+font-weight: 700;
+font-style: italic;
+padding-left: 20px
 }  
 
 /****************************************** HEADER ********************************************************/
 /*---------------------- CELULARES ----------------------------*/
 @media only screen and (max-width: 650px) { 
 
-  header {
-      position: absolute;
-      top:0;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      background-color: rgba(97, 3, 42);
-      width: 100%;
-      text-align: center;
-  }
-
-  header h1 {
-      color: white;
-  }
-
-  nav ul {
-      list-style-type: none;
-  }
-
-  nav ul li {
-      display: inline;
-  }
-
-  nav ul li a {
-      text-decoration: none;
-      color: white;
-      transition: color 0.3s, text-decoration 0.3s;
-      font-style: oblique;
-      margin-bottom: 10px;
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: small;
-  }
-
-  nav ul li a:hover {
-      color: blue;
-  }
-
-  /* Favicon de Facebook */
-  .fa-facebook-square {
-      color: white;
-      padding-right: 5px;
-  }
-  
-  .fa-facebook-square:hover {
-      color: blue;
-  }
-
-  /* Favicon de Instagram */
-  .fa-instagram {
-      color: white;
-  }
-
-  .fa-instagram:hover {
-      color: blue;
-  }
-
-  /* Título Gloriosa Burgers */
-  .bungee-regularspice- {
-      margin-bottom: 5px;
-      font-size: 8vw; 
-  }
-
-   /* Estilo para el contenedor principal */
-   .container-grid {
-    flex-grow:1;
-    gap: 20px; /* Espacio entre columnas */
-    padding: 20px;
+header {
+    position: absolute;
+    top:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(97, 3, 42);
+    width: 100%;
+    text-align: center;
 }
 
-/* Estilo para el formulario */
-form {
-    max-width: 100%; /* Ajusta al ancho del contenedor */
+header h1 {
+    color: white;
 }
 
-/* Estilo para la imagen */
-.image-container {
-    text-align: center; /* Centra la imagen */
+nav ul {
+    list-style-type: none;
 }
 
-.image-container img {
-    max-width: 100%; /* Ajusta al ancho del contenedor */
-    max-height: 100%; /* Ajusta al alto del contenedor */
-}
+nav ul li {
+    display: inline;
 }
 
-/*------------------------ TABLETS -------------------------*/
-  @media only screen and (min-width: 651px) and (max-width: 778px)  {
-    header {
-        background-color: rgba(97, 3, 42);
-        background-size: cover;
-        text-align: center;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 5px;
-    }
-    
-    header h1 {
-        color: white;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin-top: 5px;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 2vw;
-        transition: color 0.3s, text-decoration 0.3s;
-        padding: 10px;
-        font-style:oblique;
-    }
-    
-    nav ul li a:hover {
-        color: blue; /* Cambia el color al pasar el mouse */
-    }
-    
-    /* Favicon de Facebook */
-    .fa-facebook-square {
-        font-size: 2vw; 
-        color: white;
-      }
-    
-      .fa-facebook-square:hover {
-        color: blue;
-      }
-    
-    /* Favicon de Instagram */
-    .fa-instagram{
-        font-size: 2vw; 
-        color: white;
-    }
-    
-    .fa-instagram:hover {
-        color: blue;
-      } 
-        
-    /* Título Gloriosa Burgers */
-    .bungee-regularspice- {
-        margin-bottom: 5px;
-        font-size: 5.2vw; 
-    }
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-style: oblique;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+}
 
-/* Estilo para el contenedor principal */
-.container-grid {
+nav ul li a:hover {
+    color: blue;
+}
+
+/* Favicon de Facebook */
+.fa-facebook-square {
+    color: white;
+    padding-right: 5px;
+}
+
+.fa-facebook-square:hover {
+    color: blue;
+}
+
+/* Favicon de Instagram */
+.fa-instagram {
+    color: white;
+}
+
+.fa-instagram:hover {
+    color: blue;
+}
+
+/* Título Gloriosa Burgers */
+.bungee-regularspice- {
+    margin-bottom: 5px;
+    font-size: 8vw; 
+}
+
+/* Título Hacé tu reserva aquí... */
+.titulo{
+  padding-top: 130px;
+}
+
+ /* Estilo para el contenedor principal */
+ .container-grid {
   flex-grow:1;
   gap: 20px; /* Espacio entre columnas */
   padding: 20px;
@@ -192,59 +110,26 @@ form {
   max-width: 100%; /* Ajusta al ancho del contenedor */
   max-height: 100%; /* Ajusta al alto del contenedor */
 }
-
-.botonera {
-display: inline-flex;
-flex-direction: row;
-padding-left: 150px;
-gap: 50px;
 }
 
-}
-/*------------------------ NOTEBOOKS -------------------------*/
-@media only screen and (min-width: 850px)  {
-  /* Estilo para el contenedor principal */
-  .container-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
-      gap: 20px; /* Espacio entre columnas */
-      padding: 20px;
-  }
-
-  /* Estilo para el formulario */
-  form {
-      max-width: 100%; /* Ajusta al ancho del contenedor */
-  }
-
-  /* Estilo para la imagen */
-  .image-container {
-      text-align: center; /* Centra la imagen */
-  }
-
-  .image-container img {
-      max-width: 100%; /* Ajusta al ancho del contenedor */
-      max-height: 100%; /* Ajusta al alto del contenedor */
-  }
-
+/*------------------------ TABLETS -------------------------*/
+@media only screen and (min-width: 651px) and (max-width: 850px)  {
   header {
       background-color: rgba(97, 3, 42);
+      background-size: cover;
       text-align: center;
       width: 100%;
       padding-top: 10px;
+      padding-bottom: 5px;
   }
   
   header h1 {
       color: white;
   }
   
-  nav{
-    padding-bottom: 5px;
-  }
-
   nav ul {
       list-style-type: none;
       margin-top: 5px;
-
   }
   
   nav ul li {
@@ -255,9 +140,9 @@ gap: 50px;
   nav ul li a {
       text-decoration: none;
       color: white;
-      font-size: 1.5vw;
+      font-size: 2vw;
       transition: color 0.3s, text-decoration 0.3s;
-      padding: 15px;
+      padding: 10px;
       font-style:oblique;
   }
   
@@ -283,95 +168,218 @@ gap: 50px;
   
   .fa-instagram:hover {
       color: blue;
-    }
+    } 
+      
+  /* Título Gloriosa Burgers */
+  .bungee-regularspice- {
+      margin-bottom: 5px;
+      font-size: 5.2vw; 
+  }
 
-    .titulo{
-      padding-top: 10px;
-    }
+/* Estilo para el contenedor principal */
+.container-grid {
+flex-grow:1;
+gap: 20px; /* Espacio entre columnas */
+padding: 20px;
+}
+
+/* Estilo para el formulario */
+form {
+max-width: 100%; /* Ajusta al ancho del contenedor */
+}
+
+/* Estilo para la imagen */
+.image-container {
+text-align: center; /* Centra la imagen */
+}
+
+.image-container img {
+max-width: 100%; /* Ajusta al ancho del contenedor */
+max-height: 100%; /* Ajusta al alto del contenedor */
+}
+
+.titulo{
+padding-top: 20px;
+}
+
+.botonera {
+display: inline-flex;
+flex-direction: row;
+padding-left: 150px;
+gap: 50px;
+}
+
+}
+/*------------------------ NOTEBOOKS -------------------------*/
+@media only screen and (min-width: 851px)  {
+/* Estilo para el contenedor principal */
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px;
+}
+
+/* Estilo para el formulario */
+form {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+}
+
+/* Estilo para la imagen */
+.image-container {
+    text-align: center; /* Centra la imagen */
+}
+
+.image-container img {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+    max-height: 100%; /* Ajusta al alto del contenedor */
+}
+
+header {
+    background-color: rgba(97, 3, 42);
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+header h1 {
+    color: white;
+}
+
+nav{
+  padding-bottom: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 5px;
+
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    transition: color 0.3s, text-decoration 0.3s;
+    padding: 15px;
+    font-style:oblique;
+}
+
+nav ul li a:hover {
+    color: blue; /* Cambia el color al pasar el mouse */
+}
+
+/* Favicon de Facebook */
+.fa-facebook-square {
+    font-size: 2vw; 
+    color: white;
+  }
+
+  .fa-facebook-square:hover {
+    color: blue;
+  }
+
+/* Favicon de Instagram */
+.fa-instagram{
+    font-size: 2vw; 
+    color: white;
+}
+
+.fa-instagram:hover {
+    color: blue;
+  }
+
+  .titulo{
+    padding-top: 10px;
+  }
 }
 
 /***********************************************FIN HEADER**************************************************/
 
 .image-container {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
+  display: block;
+  width: 100%;
+  margin-top: 5px;
 }
 
 body{
-  background-color: black;
-  color: rgb(5, 212, 143);
-  
+background-color: black;
+color: rgb(5, 212, 143);
+
 h1 {
-  color: gold;
+color: gold;
 }
 }
 
-@media screen and (max-width: 768px) {
-    .image-container {
-        grid-column: 1 / -1;
-    }
-
-  .container-grid {
-      grid-column: 5 / 6;
+@media screen and (max-width: 650px) {
+  .image-container {
+      grid-column: 1 / -1;
   }
+
+.container-grid {
+    grid-column: 5 / 6;
+}
 }
 
 /********************************************** FOOTER ****************************************************/
 .container {
-  width: 100%;
-  margin-top: auto;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: #0f0f0f;
-  color: white;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.5vw; /* Ajustado el tamaño de letra */
-  padding: 20px;
+width: 100%;
+margin-top: auto;
+display: grid;
+gap: 20px;
+grid-template-columns: repeat(3, 1fr);
+background-color: #0f0f0f;
+color: white;
+text-align: center;
+font-style: italic;
+font-size: 1.5vw; /* Ajustado el tamaño de letra */
+padding: 20px;
 }
 
 footer {
-  background-color: #0f0f0f;
-  font-size: 1.5vw;
-  color: white;
+background-color: #0f0f0f;
+font-size: 1.5vw;
+color: white;
 }
 
 .copyright {
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-style: italic;
-  background-color: #0f0f0f;
-  border-top: 2px solid white;
-  padding: 10px 0;
-  font-size: 1.2vw; /* Igualado el tamaño de letra */
+width: 100%;
+color: white;
+text-align: center;
+font-style: italic;
+background-color: #0f0f0f;
+border-top: 2px solid white;
+padding: 10px 0;
+font-size: 1.2vw; /* Igualado el tamaño de letra */
 }
 
 /* Celulares */
 @media only screen and (max-width: 650px) {
-  .container {
-    font-size: 3.5vw;
-    /*grid-template-columns: repeat(1, 1fr);
-    gap: 1em;*/
-  }
+.container {
+  font-size: 3.5vw;
+  /*grid-template-columns: repeat(1, 1fr);
+  gap: 1em;*/
+}
 
-  .copyright {
-    font-size: 2.5vw;
-  }
+.copyright {
+  font-size: 2.5vw;
+}
 }
 
 /* Tablets */
 @media only screen and (min-width: 651px) and (max-width: 1000px) {
-  .container {
-    font-size: 2vw;
-    left:0 ;
-    right:0
-  }
-
-  .copyright {
-    font-size: 1.5vw;
-  }
+.container {
+  font-size: 2vw;
+  left:0 ;
+  right:0
 }
 
+.copyright {
+  font-size: 1.5vw;
+}
+}
