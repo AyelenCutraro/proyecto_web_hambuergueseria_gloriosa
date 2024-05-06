@@ -154,11 +154,6 @@ body, h1, h2, p, ul, li {
     .opciones{
         margin-bottom: 80px;
     }
-     
-        .grid-container {
-          font-size: small;
-          position: relative;
-    }
 }
 
 /************************************************** Notebooks ****************************************************/
@@ -170,12 +165,14 @@ body, h1, h2, p, ul, li {
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
         background-image: url(./assets/Imagenes/fondos/fondoMax.png);
         background-size: cover;
     }
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
-        margin-top: -20px;
+        margin-top: -30px;
         font-size: 2.5vw;
         text-align: center;
 }
@@ -223,10 +220,6 @@ body, h1, h2, p, ul, li {
         background-color: rgb(198, 240, 9); 
         border-bottom-style:dotted;
     } 
-    
-    /*.opciones{
-        margin-bottom: 180px;
-    }*/
 }
 
 

@@ -15,8 +15,12 @@
         font-size: x-small;
         position: relative;
   }
-}
 
+  .grid-container {
+    font-size: small;
+    position: relative;
+}
+}
 /************************************************** Notebooks ****************************************************/
 @media only screen and (min-width: 850px)  {
     .copyright {
