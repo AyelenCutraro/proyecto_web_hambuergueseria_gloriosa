@@ -70,21 +70,6 @@ body, h1, h2, p, ul, li {
     .opciones{
         margin-bottom: 200px;
     }
-
-    .grid-container {
-        bottom: 0;
-        right: 0;
-        font-size: small;
-        position: relative;
-        padding-top: 20px;
-    }
-
-    .copyright {
-        font-size: x-small;
-        bottom: 0;
-        right:0;
-        position: relative;
-    }
 }
 
 /************************************************ Tablets *********************************************************/
