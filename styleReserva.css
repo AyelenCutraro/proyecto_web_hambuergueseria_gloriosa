@@ -18,8 +18,7 @@ body {
 @media only screen and (max-width: 650px) { 
 /* Título Hacé tu reserva aquí... */
 .titulo{
-  padding-top: 80px;
-  font-size: small;
+  padding-top: 20px;
 }
 
  /* Estilo para el contenedor principal */
