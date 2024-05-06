@@ -7,7 +7,7 @@ header {
     background-color: rgba(97, 3, 42);
     padding-top: 10px;
     padding-bottom: 10px;
-    display: inline;
+    display: inline-block;
 }
 header h1 {
     color: white;
@@ -30,7 +30,7 @@ nav ul li {
         margin-bottom: 7px;
         font-size: small;
         font-family:"Kalam", cursive;
-        padding: 10px;
+        padding: 5px;
     }
 
     nav ul li a:hover {
@@ -60,7 +60,7 @@ nav ul li {
 
     /* Título Gloriosa Burgers */
     .bungee-regularspice- {
-        font-size: 4vw; 
+        font-size: 5vw; 
     }
 }
 /************************************************ Tablets *********************************************************/
