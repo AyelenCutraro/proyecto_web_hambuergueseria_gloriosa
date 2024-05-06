@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.css"> <!-- Cargo Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="styleProductos.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
-    <script src="./assets/js/bootstrap.js"></script> <!-- Cargo JavaScript-->
-    <title>Reserva</title>
+    <link rel="stylesheet" href="fuentes.css">
+    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="styleFooter.css">
+    <link rel="stylesheet" type="text/css" href="styleProductos.css">
+    <script src="jsProductos.js"></script> <!-- Cargo JavaScript-->
+    <title>Productos</title>
 </head>
 <body>
     <header>
@@ -25,17 +28,113 @@
             </ul>
         </nav>
     </header> 
+      <!-- PRODUCTOS------------------------------->
+        <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/1.png" alt="">
+                        </div>
+                        <p class="descripcion">GLORIOSA</p>
+                        <span class="precio">$ 1.300</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/2.png" alt="">
+                        </div>
+                        <p class="descripcion" id> MEAL   SKY </p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/3.png" alt="">
+                        </div>
+                        <p class="descripcion"> ORALE SPICY </p>
+                        <span class="precio">$ 3.600</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/4.png" alt="">
+                        </div>
+                        <p class="descripcion">MILA   GLORIA</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/5.png" alt="">
+                        </div>
+                        <p class="descripcion">ONION MEAL</p>
+                        <span class="precio">$ 1.300</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/6.png" alt="">
+                        </div>
+                        <p class="descripcion">CHICKEN GRILL</p>
+                        <span class="precio">$ 2.000</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/7.png" alt="">
+                        </div>
+                        <p class="descripcion">GLORY TENTATION</p>
+                        <span class="precio">$ 2.500</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/8.png" alt="">
+                        </div>
+                        <p class="descripcion">CHESSY TRILOGY</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>                    
+                </div> 
+                <div class="fila">
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/9.png" alt="">
+                        </div>
+                        <p class="descripcion">GLORIA CRUNCHY</p>
+                        <span class="precio">$ 1.300</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/10.png" alt="">
+                        </div>
+                        <p class="descripcion" id> MILA KID</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/11.png" alt="">
+                        </div>
+                        <p class="descripcion"> CHICKEN ONION </p>
+                        <span class="precio">$ 3.600</span>
+                    </div>
+                    <div class="item" onclick="cargar(this)">
+                        <div class="contenedor-foto">
+                            <img src="./assets/Imagenes/productos/12.png" alt="">
+                        </div>
+                        <p class="descripcion">CAESAR SALAD</p>
+                        <span class="precio">$ 1.800</span>
+                    </div>
+                </div>
+            </div>        
+           </section>      
+<!-- PRODUCTOS------------------------------->
     <footer>
-        <div class="container">
-                <div class="item kalam-regular">Preguntas frecuentes</div>
-                <div class="item kalam-regular">Sucursales</div>
-                <div class="item kalam-regular">Quienes somos?</div>
-                <div class="item kalam-regular">Libro de quejas</div>
-                <div class="item kalam-regular">Asuntos Legales</div>
-                <div class="item kalam-regular">Novedades</div> 
-                <div class="item kalam-regular">Contacto</div>  
-                <div class="item kalam-regular">Servicios</div> 
-                <div class="item kalam-regular">Políticas de privacidad</div>          
+        <div class="grid-container">
+            <div class="grid-item kalam-regular">Preguntas frecuentes</div>
+            <div class="grid-item kalam-regular">Sucursales</div>
+            <div class="grid-item kalam-regular">Quienes somos?</div>
+            <div class="grid-item kalam-regular">Libro de quejas</div>
+            <div class="grid-item kalam-regular">Asuntos Legales</div>
+            <div class="grid-item kalam-regular">Novedades</div> 
+            <div class="grid-item kalam-regular">Contacto</div>  
+            <div class="grid-item kalam-regular">Servicios</div> 
+            <div class="grid-item kalam-regular">Políticas de privacidad</div>         
         </div>      
         <div class="copyright kalam-regular">&copy; 2024 Gloriosa Burgers. Todos los derechos reservados.</div>
     </footer>

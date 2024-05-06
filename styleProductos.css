@@ -1,127 +1,51 @@
-/* Fuentes */
-.bungee-regularspice- {
-    font-family: "Bungee Spice", sans-serif;
-    font-weight: 400;
-    font-style:normal;
-    font-size:2vw;
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+/************************************************PRODCUTOS*********************************************************/
+
+.contenido{
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+}
+.mostrador .fila{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
-.kalam-regular {
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-style: italic;
-  margin-left: 20px;
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 30px;
+    height: 250px;
+    /*border: 2px solid red;*/
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
 }
-
-.kalam-bold {
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  font-style: italic;
-}  
-
-header {
-  background-color: rgba(97, 3, 42);
-  text-align: center;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: -15px;
+.mostrador .fila .item:hover{
+    background-color: #e6e6e6;
 }
-
-header h1 {
-  color: white;
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 30px 0;
 }
-
-nav ul {
-  list-style-type: none;
-  margin-top: 5px;
+.mostrador .fila .item .descripcion{
+    color: #707070;
+    font-weight: bold;
 }
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+.mostrador .fila .item .precio{
+    color: #f85151;
+    font-weight: bold;
+    font-size: 20px;
 }
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.5vw;
-  transition: color 0.3s, text-decoration 0.3s;
-  padding: 10px;
-  font-style:oblique;
-}
-
-nav ul li a:hover {
-  color: blue; /* Cambia el color al pasar el mouse */
-}
-
-/* Favicon de Facebook */
-.fa-facebook-square {
-  font-size: 2vw;
-  color: white; 
-}
-
-.fa-facebook-square:hover {
-  color: blue;
-}
-
-/* Favicon de Instagram */
-.fa-instagram{
-  font-size: 2vw; 
-  color: white;
-}
-
-.fa-instagram:hover {
-  color: blue;
-}
-
-  /************************************************ Footer *********************************************************/
-.container {
-  width: 100%; /* Cambiado a 100% para ocupar todo el ancho de la pantalla */
-  margin-top: auto;
-  display: grid;
-  gap: 1.6em;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: #0f0f0f;
-  color: white;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.5vw;
-  padding: 20px;
-}
-
-footer {
- background-color: #0f0f0f;
-}
-
-.copyright {
-  width: 100%; 
-  color: white;
-  text-align: center;
-  font-style: italic;
-  background-color: #0f0f0f;
-  border-top: 2px solid white;
-  padding: 10px 0;
-}
-
-@media only screen and (max-width: 650px) {
-  .container {
-    font-size: 2.5vw;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
-  }
-
-  .copyright {
-    font-size: 2.5vw;
-  }
-}
-
-@media only screen and (min-width: 651px) and (max-width: 1000px) {
-  .container {
-    font-size: 2vw;
-  }
-
-  .copyright {
-    font-size: 2vw;
-  }
-}
+/************************************************PRODUCTOS*********************************************************/
