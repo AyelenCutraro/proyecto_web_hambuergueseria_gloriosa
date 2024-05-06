@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.css"> <!-- Cargo Bootstrap-->
-    <link rel="stylesheet" type="text/css" href="styleProductos.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="fuentes.css">
+    <link rel="stylesheet" href="styleHeader.css">
+    <link rel="stylesheet" href="styleFooter.css">
+    <link rel="stylesheet" type="text/css" href="styleProductos.css">
     <script src="jsProductos.js"></script> <!-- Cargo JavaScript-->
-    <title>Reserva</title>
+    <title>Productos</title>
 </head>
+<header>
+    <h1 class="bungee-regularspice-">Gloriosa Burgers</h1>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Inicio</a></li>           
+            <li><a href="./novedades.html">Novedades</a></li>
+            <li><a href="./reservas.html">Reservas</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><i class="fab fa-facebook-square"></i></li> 
+            <li><i class="fab fa-instagram"></i></li>
+        </ul>
+    </nav>
+</header> 
 <body>
-    <header>
-        <h1 class="bungee-regularspice-">Gloriosa Burgers</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                
-                <li><a href="./novedades.html">Novedades</a></li>
-                <li><a href="./reservas.html">Reservas</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><i class="fab fa-facebook-square"></i></li> 
-                <li><i class="fab fa-instagram"></i></li>
-            </ul>
-        </nav>
-    </header> 
-
     <!-- PRODUCTOS------------------------------->
-
         <section class="contenido">
             <div class="mostrador" id="mostrador">
                 <div class="fila">
@@ -91,8 +91,6 @@
                         <span class="precio">$ 1.800</span>
                     </div>                    
                 </div> 
-
-
                 <div class="fila">
                     <div class="item" onclick="cargar(this)">
                         <div class="contenedor-foto">
@@ -123,14 +121,11 @@
                         <span class="precio">$ 1.800</span>
                     </div>
                 </div>
-            </div>
-           
-           </section> 
-    
-       
+            </div>        
+           </section>      
 <!-- PRODUCTOS------------------------------->
     <footer>
-        <div class="container">
+        <div class="grid-container">
             <div class="grid-item kalam-regular">Preguntas frecuentes</div>
             <div class="grid-item kalam-regular">Sucursales</div>
             <div class="grid-item kalam-regular">Quienes somos?</div>

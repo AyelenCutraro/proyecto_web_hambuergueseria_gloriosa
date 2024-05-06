@@ -5,77 +5,13 @@ body, h1, h2, p, ul, li {
 
 /********************************************** Celulares ********************************************************/
 @media only screen and (max-width: 650px) {
-
-    header {
-        position: absolute;
-        top:0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: rgba(97, 3, 42);
-        width: 100%;
-        text-align: center;
-    }
-
-    header h1 {
-        color: white;
-    }
-
-    nav ul {
-        list-style-type: none;
-    }
-
-    nav ul li {
-        display: inline;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        transition: color 0.3s, text-decoration 0.3s;
-        font-style: oblique;
-        margin-bottom: 7px;
-        padding: 5px;
-        font-size: small;
-    }
-
-    nav ul li a:hover {
-        color: blue;
-    }
-
-    /* Favicon de Facebook */
-    .fa-facebook-square {
-        color: white;
-        padding-right: 5px;
-    }
-    
-    .fa-facebook-square:hover {
-        color: blue;
-    }
-
-    /* Favicon de Instagram */
-    .fa-instagram {
-        color: white;
-    }
-
-    .fa-instagram:hover {
-        color: blue;
-    }
-
-    /* Título Gloriosa Burgers */
-    .bungee-regularspice- {
-        margin-bottom: 5px;
-        font-size: 8vw; 
-    }
-
     body {
         /* Títulos del nav */
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Kalam", cursive;
+        padding-top: 80px; /* Para evitar que el contenido se oculte detrás del header */
         background-image: url(./assets/Imagenes/fondos/paraCelular.png);
         background-size: cover;
-        color: black;
-        padding-top: 80px; /* Para evitar que el contenido se oculte detrás del header */
     }
-
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1{
         color: black;
@@ -149,80 +85,17 @@ body, h1, h2, p, ul, li {
 
 /************************************************ Tablets *********************************************************/
 @media only screen and (min-width: 651px) and (max-width: 850px)  {
-    header {
-        background-color: rgba(97, 3, 42);
-        background-size: cover;
-        text-align: center;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 15px;
-    }
-    
-    header h1 {
-        color: white;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin-top: 5px;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 2vw;
-        transition: color 0.3s, text-decoration 0.3s;
-        padding: 10px;
-        font-style:oblique;
-    }
-    
-    nav ul li a:hover {
-        color: blue; /* Cambia el color al pasar el mouse */
-    }
-    
-    /* Favicon de Facebook */
-    .fa-facebook-square {
-        font-size: 2vw; 
-        color: white;
-      }
-    
-      .fa-facebook-square:hover {
-        color: blue;
-      }
-    
-    /* Favicon de Instagram */
-    .fa-instagram{
-        font-size: 2vw; 
-        color: white;
-    }
-    
-    .fa-instagram:hover {
-        color: blue;
-      } 
-        
-    /* Título Gloriosa Burgers */
-    .bungee-regularspice- {
-        margin-bottom: 5px;
-        font-size: 5.2vw; 
-    }
-    
     body {
         /* Títulos del nav */
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-image: url(./assets/Imagenes/fondos/burgerMedium.jpg);
-        background-size: cover;
+        font-family:"Kalam", cursive;
         background-attachment: fixed;
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         overflow-x: hidden;
+        background-image: url(./assets/Imagenes/fondos/burgerMedium.jpg);
+        background-size: cover;
     }
-    
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
         margin-top: -25px;
@@ -286,82 +159,20 @@ body, h1, h2, p, ul, li {
           font-size: small;
           position: relative;
     }
-    
-        .copyright {
-          font-size: x-small;
-          position: relative;
-    }
-
 }
 
 /************************************************** Notebooks ****************************************************/
 @media only screen and (min-width: 850px)  {
-    header {
-        background-color: rgba(97, 3, 42);
-        text-align: center;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 15px;
+    body {
+        /* Títulos del nav */
+        font-family:  "Kalam", cursive;
+        color: rgb(10, 10, 10);
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        background-image: url(./assets/Imagenes/fondos/fondoMax.png);
+        background-size: cover;
     }
-    
-    header h1 {
-        color: white;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin-top: 5px;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.5vw;
-        transition: color 0.3s, text-decoration 0.3s;
-        padding: 15px;
-        font-style:oblique;
-    }
-    
-    nav ul li a:hover {
-        color: blue; /* Cambia el color al pasar el mouse */
-    }
-    
-    /* Favicon de Facebook */
-    .fa-facebook-square {
-        font-size: 2vw; 
-        color: white;
-      }
-    
-      .fa-facebook-square:hover {
-        color: blue;
-      }
-    
-    /* Favicon de Instagram */
-    .fa-instagram{
-        font-size: 2vw; 
-        color: white;
-    }
-    
-    .fa-instagram:hover {
-        color: blue;
-      }
-
-body {
-    /* Títulos del nav */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image: url(./assets/Imagenes/fondos/fondoMax.png);
-    background-size: cover;
-    color: rgb(10, 10, 10);
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-}
-
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
         margin-top: -20px;
@@ -421,66 +232,6 @@ body {
         font-size: x-large;
         position: relative;
     }
-    
-      .copyright {
-        font-size: large;
-        bottom: 0;
-        position: relative;
-    } 
-
 }
 
-/* Fuentes */
-.kalam-regular {
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.kalam-bold {
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  font-style: normal;
-}  
-
-.bungee-regularspice- {
-  margin-bottom: 5px;
-  font-family: "Bungee Spice", sans-serif;
-  font-weight: 400;
-  font-style:normal;
-}
-.chicle-regular {
-    font-family: "Chicle", serif;
-    font-weight: 400;
-    font-style: oblique;
-}
-
-/**************************************************** Footer *********************************************************/
-.grid-container {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    margin-top: auto;
-    background-color: #0f0f0f;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  footer {
-    background-color: #0f0f0f;
-    color: white;
-  }
-  
-  .copyright {
-    width: 100%;
-    color: white;
-    text-align: center;
-    font-style: italic;
-    background-color: #0f0f0f;
-    border-top: 1px solid white;
-    padding-top: 10px;
-  }
