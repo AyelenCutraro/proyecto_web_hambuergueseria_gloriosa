@@ -7,8 +7,7 @@ header {
     background-color: rgba(97, 3, 42);
     padding-top: 10px;
     padding-bottom: 10px;
-    display: inline-block;
-    left: 0;
+    display: inline;
 }
 header h1 {
     color: white;
