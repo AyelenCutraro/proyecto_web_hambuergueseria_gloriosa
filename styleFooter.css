@@ -39,6 +39,8 @@
     font-style: italic;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: x-large;
+    position: relative;
   }
   
   footer {
