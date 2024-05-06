@@ -81,7 +81,8 @@
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 651px) and (max-width: 850px)  {
+
     .header {
         text-align: center;
     }
