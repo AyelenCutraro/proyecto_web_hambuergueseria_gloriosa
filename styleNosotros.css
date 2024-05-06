@@ -1,4 +1,4 @@
-  body, h1, h2, p, ul, li {
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -81,8 +81,7 @@
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 651px) and (max-width: 850px)  {
-
+@media screen and (max-width: 768px) {
     .header {
         text-align: center;
     }

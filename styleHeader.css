@@ -1,6 +1,9 @@
-header {
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+header {
     width: 100%;
     text-align: center;
     background-size: cover;
@@ -17,7 +20,8 @@ nav ul {
 }
 
 nav ul li {
-    text-align: center;
+    display: inline;
+    margin-right: 20px;
 }
 /********************************************** Celulares ********************************************************/
 @media only screen and (max-width: 650px) {
@@ -106,7 +110,7 @@ nav ul li {
 
 }
 /************************************************** Notebooks ****************************************************/
-@media only screen and (min-width: 850px)  {    
+@media only screen and (min-width: 851px)  {    
     nav ul li a {
         text-decoration: none;
         color: white;
