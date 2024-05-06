@@ -42,6 +42,16 @@ form {
   max-width: 100%; /* Ajusta al ancho del contenedor */
   max-height: 100%; /* Ajusta al alto del contenedor */
 }
+.botonera {
+  margin-left: 25px;
+}
+}
+
+.contenedor {
+  grid-column: 1 / -1;
+}
+.contenedor {
+grid-column: 5 / 6;
 }
 
 /*------------------------ TABLETS -------------------------*/
@@ -109,14 +119,11 @@ form {
   width: 100%;
   margin-top: 5px;
 }
-}
-
-@media screen and (max-width: 650px) {
-  .contenedor {
-      grid-column: 1 / -1;
+.botonera {
+  display: inline-flex;
+  flex-direction: row;
+  padding-left: 150px;
+  gap: 50px;
   }
 
-.contenedor {
-    grid-column: 5 / 6;
-}
 }
