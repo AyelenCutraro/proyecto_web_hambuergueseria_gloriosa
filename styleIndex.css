@@ -8,21 +8,19 @@ body, h1, h2, p, ul, li {
     body {
         /* Títulos del nav */
         font-family: "Kalam", cursive;
-        padding-top: 80px; /* Para evitar que el contenido se oculte detrás del header */
         background-image: url(./assets/Imagenes/fondos/paraCelular.png);
         background-size: cover;
+        position: fixed;
     }
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1{
         color: black;
         text-align: center;
         font-size: 5vw;
-        margin-bottom: 50px;
+        margin-top: -30px;
+        margin-bottom: 20px;
     }
 
-    .opciones{
-        margin-bottom: 50px;
-    }
 
     /* Título Qué te gustaría? */
     .section2 {
@@ -52,6 +50,10 @@ body, h1, h2, p, ul, li {
         border: none; /* Añadido para eliminar el borde del botón */
     }
 
+    .opciones{
+        margin-bottom: 60px;
+    }
+
     /* Añadido para hacer el botón transparente */
     .reservar, .retirar, .enviar {
         background-color: transparent;
@@ -66,10 +68,6 @@ body, h1, h2, p, ul, li {
         background-color: rgb(82, 173, 123);
         border-bottom-style: dotted;
     }  
-
-    .opciones{
-        margin-bottom: 200px;
-    }
 }
 
 /************************************************ Tablets *********************************************************/
