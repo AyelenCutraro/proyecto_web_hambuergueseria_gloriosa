@@ -10,7 +10,7 @@ body, h1, h2, p, ul, li {
         font-family: "Kalam", cursive;
         background-image: url(./assets/Imagenes/fondos/paraCelular.png);
         background-size: cover;
-        position: fixed;
+        position: relative;
     }
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1{
