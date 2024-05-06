@@ -1,44 +1,34 @@
-body {
+header {
     margin: 0;
     padding: 0;
     width: 100%;
-    left: 0;
-    right:0;
+    text-align: center;
+    background-size: cover;
+    background-color: rgba(97, 3, 42);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+header h1 {
+    color: white;
 }
 
+nav ul {
+    list-style-type: none;
+}
 
+nav ul li {
+    text-align: center;
+    display: inline-flex
+}
 /********************************************** Celulares ********************************************************/
 @media only screen and (max-width: 650px) {
-
-    header {
-        position: absolute;
-        top:0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: rgba(97, 3, 42);
-        width: 100%;
-        text-align: center;
-    }
-
-    header h1 {
-        color: white;
-    }
-
-    nav ul {
-        list-style-type: none;
-    }
-
-    nav ul li {
-        display: inline;
-    }
-
     nav ul li a {
         text-decoration: none;
         color: white;
         transition: color 0.3s, text-decoration 0.3s;
         font-style: oblique;
         margin-bottom: 7px;
-        padding: 5px;
         font-size: small;
         font-family:"Kalam", cursive;
     }
@@ -51,7 +41,6 @@ body {
     /* Favicon de Facebook */
     .fa-facebook-square {
         color: white;
-        padding-right: 5px;
     }
     
     .fa-facebook-square:hover {
@@ -76,35 +65,11 @@ body {
 }
 /************************************************ Tablets *********************************************************/
 @media only screen and (min-width: 651px) and (max-width: 850px)  {
-    header {
-        background-color: rgba(97, 3, 42);
-        background-size: cover;
-        text-align: center;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 15px;
-    }
-    
-    header h1 {
-        color: white;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin-top: 5px;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-    
     nav ul li a {
         text-decoration: none;
         color: white;
         font-size: 2vw;
         transition: color 0.3s, text-decoration 0.3s;
-        padding: 10px;
         font-family:"Kalam", cursive;
     }
     
@@ -143,35 +108,12 @@ body {
 
 }
 /************************************************** Notebooks ****************************************************/
-@media only screen and (min-width: 850px)  {
-    header {
-        background-color: rgba(97, 3, 42);
-        text-align: center;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 15px;
-    }
-    
-    header h1 {
-        color: white;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        margin-top: 5px;
-    }
-    
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-    
+@media only screen and (min-width: 850px)  {    
     nav ul li a {
         text-decoration: none;
         color: white;
         font-size: 1.5vw;
         transition: color 0.3s, text-decoration 0.3s;
-        padding: 15px;
         font-family:"Kalam", cursive;
     }
     
