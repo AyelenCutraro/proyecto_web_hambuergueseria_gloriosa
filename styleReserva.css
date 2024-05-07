@@ -6,12 +6,12 @@ body, h1, h2, p, ul, li {
 body {
   background-color: black;
   color: #05d48f;
-  margin-left: 10px;
+  /*margin-left: 10px;
     h1 {
       color: gold;
-      margin-top: 10px;
+     /margin-top: 10px;
       margin-left: 10px;
-    }
+    }*/
 }
 
 /*---------------------- CELULARES ----------------------------*/
