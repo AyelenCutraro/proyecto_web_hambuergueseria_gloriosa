@@ -6,12 +6,11 @@ body, h1, h2, p, ul, li {
 body {
   background-color: black;
   color: #05d48f;
-  /*margin-left: 10px;
-    h1 {
+    .titulo {
       color: gold;
-     /margin-top: 10px;
+      margin-top: 10px;
       margin-left: 10px;
-    }*/
+    }
 }
 
 /*---------------------- CELULARES ----------------------------*/
@@ -91,7 +90,7 @@ gap: 50px;
 }
 /*------------------------ NOTEBOOKS -------------------------*/
 @media only screen and (min-width: 851px)  {
-/* Estilo para el contenedor principal */
+  /* Estilo para el contenedor principal */
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
@@ -125,5 +124,4 @@ form {
   padding-left: 150px;
   gap: 50px;
   }
-
 }
