@@ -19,7 +19,7 @@ body, h1, h2, p, ul, li {
     -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
   }
-  
+
   @-webkit-keyframes fadeOut {
     0% {
       opacity: 1;
@@ -38,7 +38,7 @@ body, h1, h2, p, ul, li {
       opacity: 0;
     }
   }
-  
+
   /* 
    * 	Owl Carousel - Auto Height Plugin
    */
@@ -224,7 +224,34 @@ body, h1, h2, p, ul, li {
   }
 
   body {
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-  }
+}
+
+.related-post {
+    background: #0f0e0e;
+    color: #ffffff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+/* Para tabletas */
+@media (max-width: 768px) {
+    .related-post {
+        height: 120px;
+        font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
+    }
+}
+
+/* Para teléfonos móviles */
+@media (max-width: 576px) {
+    .related-post {
+        height: 80px;
+        font-size: 14px; /* Cambiar tamaño de fuente si es necesario */
+        flex-direction: column;
+    }
+}

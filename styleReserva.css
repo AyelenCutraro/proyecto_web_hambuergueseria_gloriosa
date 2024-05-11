@@ -1,16 +1,6 @@
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: black;
-  color: #05d48f;
-    .titulo {
-      color: gold;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
+  /* Fondo con degradado de colores */
+  background: linear-gradient(to bottom right, #ff69b4, #800080, #0000ff);
 }
 
 /*---------------------- CELULARES ----------------------------*/
@@ -40,6 +30,7 @@ form {
 .image-container img {
   max-width: 100%; /* Ajusta al ancho del contenedor */
   max-height: 100%; /* Ajusta al alto del contenedor */
+  background: linear-gradient(to bottom right, #ff69b4, #800080, #0000ff);
 }
 .botonera {
   margin-left: 25px;
