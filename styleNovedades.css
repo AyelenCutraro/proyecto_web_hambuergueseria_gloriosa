@@ -232,7 +232,7 @@ li {
 body {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
+  background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
 
   .carousel-inner img {
     display:flexbox;
