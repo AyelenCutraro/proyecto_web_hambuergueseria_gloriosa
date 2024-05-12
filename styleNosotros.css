@@ -14,6 +14,7 @@ body, h1, h2, p, ul, li {
     font-family: "Kalam", cursive;
 }
 
+
 /* CONTENEDOR */
 
 .contenedor {
@@ -80,6 +81,10 @@ body, h1, h2, p, ul, li {
 }*/
 
 /* MEDIA QUERIES */
+.mapa {
+    width: 100% !important;
+    border: 0;
+}
 
 @media screen and (max-width: 768px) {
     .header {

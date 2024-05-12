@@ -1,17 +1,19 @@
-body, h1, h2, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: black;
-  color: #05d48f;
-  margin-left: 10px;
-    h1 {
-      color: gold;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
+  /* Fondo con degradado de colores */
+  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
+  color: rgb(250, 248, 246);
+  min-width: 320px;
+}
+.text-muted{
+  color:black !important;
+}
+.form-check-label{
+color: black;
+}
+.form-control{
+  background-color: blueviolet;
+  border-block-style: unset;
+  color:black;
 }
 
 /*---------------------- CELULARES ----------------------------*/
@@ -19,6 +21,10 @@ body {
 /* Título Hacé tu reserva aquí... */
 .titulo{
   padding-top: 20px;
+  padding-left: 20px !important;
+  color: gold;
+  font-size: 0.5vw !important;
+  overflow: hidden;
 }
 
  /* Estilo para el contenedor principal */
@@ -41,6 +47,7 @@ form {
 .image-container img {
   max-width: 100%; /* Ajusta al ancho del contenedor */
   max-height: 100%; /* Ajusta al alto del contenedor */
+  background: linear-gradient(to bottom right, #ff69b4, #800080, #0000ff);
 }
 .botonera {
   margin-left: 25px;
@@ -56,6 +63,11 @@ grid-column: 5 / 6;
 
 /*------------------------ TABLETS -------------------------*/
 @media only screen and (min-width: 651px) and (max-width: 850px)  {
+  .titulo {
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    color: gold;
+  }
 /* Estilo para el contenedor principal */
 .contenedor {
 flex-grow:1;
@@ -78,10 +90,6 @@ max-width: 100%; /* Ajusta al ancho del contenedor */
 max-height: 100%; /* Ajusta al alto del contenedor */
 }
 
-.titulo{
-padding-top: 20px;
-}
-
 .botonera {
 display: inline-flex;
 flex-direction: row;
@@ -91,7 +99,13 @@ gap: 50px;
 }
 /*------------------------ NOTEBOOKS -------------------------*/
 @media only screen and (min-width: 851px)  {
-/* Estilo para el contenedor principal */
+  .titulo{
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    color: gold;
+    font-size: 3vw;
+  }
+  /* Estilo para el contenedor principal */
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
@@ -122,8 +136,7 @@ form {
 .botonera {
   display: inline-flex;
   flex-direction: row;
-  padding-left: 150px;
+  padding-left: 170px;
   gap: 50px;
   }
-
 }
