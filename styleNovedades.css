@@ -1,13 +1,7 @@
-body,
-h1,
-h2,
-p,
-ul,
-li {
+body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
 }
-
 
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
@@ -277,36 +271,6 @@ main {
     margin-top: 5px;
 }
 
-.contenedor>.related-post {
-    /*background: #0f0e0e;*/
-    color: #ffffff;
-    height: 180px;
-    display: flex;
-   /* align-items: center;
-    justify-content: center;*/
-    /* transition: all 0.5s ease;*/
-} 
-
-/*.contenedor, .related-post: hover {
-    cursor: pointer;
-    color: #000000;
-    background: #ffffff;
-}*/
-
-
-
-
-
-.related-post {
-  margin-top:600px;
-  background: #0f0e0e;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.5s ease;
-}
-
 .nuevaSucursal {
   background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
   font-family: 'kalam-bold';
@@ -324,7 +288,6 @@ font-size: 2vW;
 }
 
 .mapa {
-  margin-top: 40px; /* Espacio superior para separar del contenido principal */
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -338,7 +301,7 @@ body {
 }
 }
 
-/* Para tabletas */
+/* Para tablets */
 @media (min-width: 651px) and (max-width: 850px) {
   .related-post {
     height: 120px;
