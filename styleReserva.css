@@ -11,7 +11,7 @@ body {
 color: black;
 }
 .form-control{
-  background-color: blueviolet;
+  background-color: rgb(60, 91, 105);
   border-block-style: unset;
   color:black;
 }
