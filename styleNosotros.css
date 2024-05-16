@@ -133,8 +133,7 @@ body, h1, h2, p, ul, li {
 @media screen and (min-width: 867px) {
     .contenedor {
         width: 90%;
-        max-width: 1000px;
-        margin: 10em;
+       
         margin-top: 4em;
         display: grid;
         gap: 1.6em;
