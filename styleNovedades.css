@@ -223,6 +223,7 @@ body, h1, h2, p, ul, li {
   font-size: 5vw;
 }
 
+
 body {
   display: flex;
   flex-direction: column;
@@ -276,7 +277,7 @@ main {
   font-family: 'kalam-bold';
   font-size: 3vw ;
   text-align: center;
-  color: white;
+  color: rgb(255, 230, 7);
 }
 
 .carousel-item{
