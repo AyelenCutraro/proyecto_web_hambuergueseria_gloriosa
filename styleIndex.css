@@ -104,6 +104,7 @@ body, h1, h2, p, ul, li {
         color: white;
         margin-top: 10px;
         margin-left: 10px;
+        padding-top: 30px;
         margin-bottom: 5px;
         background-color: rgb(37, 102, 37, 0.5);
         border-radius: 40%;
@@ -173,8 +174,7 @@ body, h1, h2, p, ul, li {
         min-width: 65vw;
         max-width:min-content;
         text-align: center;
-        margin-top: -20px;
-        margin-bottom: 10px;
+        margin-top: -30px;
     }
 
      /* Títulos del menú */   
@@ -188,7 +188,7 @@ body, h1, h2, p, ul, li {
         margin-top: 5px;
         margin-left: 10px;
         margin-bottom: 20px;
-
+        padding-top: 30px;
         background-color: rgba(87, 1, 72, 0.5); /* Cambiado a transparente */
         border-radius: 40%;
         border-bottom-style: dotted;
@@ -210,7 +210,7 @@ body, h1, h2, p, ul, li {
     } 
 
     .opciones{
-        margin-bottom: 160px;
+        margin-bottom: 160px
     }
 }
 

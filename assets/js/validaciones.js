@@ -7,17 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var fechaInput = document.getElementById("fecha");
     var cantPersSelect = document.getElementById("cantPers");
 
-    nombreInput.addEventListener("keypress", function(event) {
-        // Verificar si la tecla presionada es Enter
-        if (event.key === "Enter") {
-            validarNombre();
-        }
-    });
-    
-    nombreInput.addEventListener("focusout", function() {
+    // Validaciones para el nombre
+    nombreInput.addEventListener("blur", function() {
         validarNombre();
     });
-    
+
     function validarNombre() {
         if (!/^[a-zA-Z\s]+$/.test(nombreInput.value)) {
             nombreInput.setCustomValidity("Solo se permiten letras y espacios en el nombre.");
@@ -25,32 +19,22 @@ document.addEventListener("DOMContentLoaded", function() {
             nombreInput.setCustomValidity("");
         }
     }
-    
-nombreInput.addEventListener("focusout", function() {
-    validarNombre();
-});
 
-
-    apellidoInput.addEventListener("keypress", function(event) {
-        // Verificar si la tecla presionada es Enter
-        if (event.key === "Enter") {
-            validarApellido();
-        }
-        function validarApellido() {
-            if (!/^[a-zA-Z\s]+$/.test(apellidoInput.value)) {
-                apellidoInput.setCustomValidity("Solo se permiten letras y espacios en el nombre.");
-            } else {
-                apellidoInput.setCustomValidity("");
-            }
-        }
-        
-    apellidoInput.addEventListener("focusout", function() {
+    // Validaciones para el apellido
+    apellidoInput.addEventListener("blur", function() {
         validarApellido();
     });
-    });
+
+    function validarApellido() {
+        if (!/^[a-zA-Z\s]+$/.test(apellidoInput.value)) {
+            apellidoInput.setCustomValidity("Solo se permiten letras y espacios en el apellido.");
+        } else {
+            apellidoInput.setCustomValidity("");
+        }
+    }
 
     // Validar teléfono para que no contenga letras
-    telefonoInput.addEventListener("blur", function() {
+    telefonoInput.addEventListener("keyup", function() {
         if (!/^\d+$/.test(telefonoInput.value)) {
             telefonoInput.setCustomValidity("Solo se permiten números en el teléfono.");
         } else {
@@ -58,27 +42,22 @@ nombreInput.addEventListener("focusout", function() {
         }
     });
 
-    // Validar correo electrónico para que contenga al menos un punto
-    emailInput.addEventListener("keypress", function(event) {
-        // Verificar si la tecla presionada es Enter (código de tecla 13)
-        if (event.key === "Enter") {
-            validarEmail();
-        }
-    });
-    
+    // Validaciones para el correo electrónico
     emailInput.addEventListener("blur", function() {
         validarEmail();
     });
     
     function validarEmail() {
-        if (!/\./.test(emailInput.value)) {
-            emailInput.setCustomValidity("El correo electrónico debe contener al menos un punto.");
+        var email = emailInput.value;
+        var pattern = /^[^\s@]+@[^\s@]+\.(com|us|ar|museum|uk|de|jp|fr|cn|br|es|au|org|net|edu|gov|mil)$/i; // Expresión regular para validar el formato y TLD del correo electrónico
+        if (!pattern.test(email)) {
+            emailInput.setCustomValidity("Por favor, ingresa una dirección de correo electrónico válida");
         } else {
             emailInput.setCustomValidity("");
         }
     }
     
-    // Validar fecha para que no sea anterior a la fecha actual
+    // Validaciones para la fecha
     fechaInput.addEventListener("blur", function() {
         var fechaSeleccionada = new Date(fechaInput.value);
         var fechaActual = new Date();
@@ -86,16 +65,14 @@ nombreInput.addEventListener("focusout", function() {
         if (fechaSeleccionada < fechaActual) {
             fechaInput.setCustomValidity("La fecha no puede ser anterior a la fecha actual.");
         } else {
-            fechaInput.setCustomValidity("");
-        }
-
-        // Validar que la fecha no sea mayor a 2 meses posterior a la fecha actual
-        var fechaMaxima = new Date();
-        fechaMaxima.setMonth(fechaMaxima.getMonth() + 2);
-        if (fechaSeleccionada > fechaMaxima) {
-            fechaInput.setCustomValidity("La fecha no puede ser mayor a 2 meses posterior a la fecha actual.");
-        } else {
-            fechaInput.setCustomValidity("");
+            // Validar que la fecha no sea mayor a 2 meses posterior a la fecha actual
+            var fechaMaxima = new Date();
+            fechaMaxima.setMonth(fechaMaxima.getMonth() + 2);
+            if (fechaSeleccionada > fechaMaxima) {
+                fechaInput.setCustomValidity("La reserva solo puede realizarse con un máximo de dos meses de anticipación.");
+            } else {
+                fechaInput.setCustomValidity("");
+            }
         }
     });
 
@@ -108,4 +85,3 @@ nombreInput.addEventListener("focusout", function() {
         }
     });
 });
-

@@ -26,8 +26,8 @@
             <li><a href="./novedades.html">Novedades</a></li>
             <li><a href="./reservas.html">Reservas</a></li>
             <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><i class="fab fa-facebook-square"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </nav>
 </header>
@@ -40,36 +40,30 @@
 
 <div class="opciones">
     <form action="./reservas.html" method="get" name="formularioContacto"> <!-- En action me falta la ruta a donde quiero que se envíe mi formulario -->
-        <button class="reservar" type="submit"> 
-            <label for="reservar">
-                <section id="reservar" class="section">
-                     <h2 class="kalam-bold">Reservar una mesa en nuestro local</h2>
-                     <p class="kalam-bold">¡Reúnete con amigos y/o familiares!</p>
-                </section>
-            </label>
+        <section id="reservar" class="section">
+            <h2 class="kalam-bold">Reservar una mesa en nuestro local</h2>
+            <p class="kalam-bold">¡Reúnete con amigos y/o familiares!</p>
+        <button class="reservar" type="submit">    
         </button>
+    </section>
     </form>
             
     <form action="./productos.html" method="get" name="formularioPedido">
+            <section id="retirar" class="section">
+                <h2 class="kalam-bold">Venir en persona a retirar tu pedido</h2>
+                <p class="kalam-bold">¡Disfruta de nuestro servicio Take Away!</p>
         <button class="retirar" type="submit"> 
-            <label for="retirar">
-                <section id="retirar" class="section">
-                    <h2 class="kalam-bold">Venir en persona a retirar tu pedido</h2>
-                    <p class="kalam-bold">¡Disfruta de nuestro servicio Take Away!</p>
-                </section>
-            </label>
         </button>
+    </section>
     </form>
 
     <form action="./productos.html" method="get" name="formularioEnvio">
+        <section id="enviar" class="section">
+            <h2 class="kalam-bold">Hacer un pedido a domicilio</h2>
+            <p class="kalam-bold">¡Te llevamos el pedido hasta tu casa!</p>
         <button class="enviar" type="submit"> 
-            <label for="enviar">
-                <section id="enviar" class="section">
-                    <h2 class="kalam-bold">Hacer un pedido a domicilio</h2>
-                    <p class="kalam-bold">¡Te llevamos el pedido hasta tu casa!</p>
-                </section>
-            </label>
         </button>
+    </section>
     </form>
 </div>
 <footer>
