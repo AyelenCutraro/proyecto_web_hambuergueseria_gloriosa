@@ -15,10 +15,12 @@
 @media only screen and (min-width: 651px) and (max-width: 850px) {
   .grid-container {
     font-size: small;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: medium;
   }
   
   .copyright {
-    font-size: x-small;
+    font-size: small;
   }
 }
 
