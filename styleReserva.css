@@ -1,6 +1,6 @@
 body {
   /* Fondo con degradado de colores */
-  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
+  background: radial-gradient(circle at 0.2% 1.8%, rgb(88, 0, 0) 0%, rgb(255, 90, 8) 100.2%);
   color: rgb(250, 248, 246);
   min-width: 320px;
 }
@@ -11,11 +11,15 @@ body {
 color: black;
 }
 .form-control{
-  background-color: blueviolet;
+  background-color: rgb(60, 91, 105);
   border-block-style: unset;
   color:black;
 }
 
+.btn-primary {
+  background-color: black;
+  }
+  
 /*---------------------- CELULARES ----------------------------*/
 @media only screen and (max-width: 650px) { 
 /* Título Hacé tu reserva aquí... */
@@ -47,7 +51,7 @@ form {
 .image-container img {
   max-width: 100%; /* Ajusta al ancho del contenedor */
   max-height: 100%; /* Ajusta al alto del contenedor */
-  background: linear-gradient(to bottom right, #ff69b4, #800080, #0000ff);
+  background: radial-gradient(circle at 0.2% 1.8%, rgb(255, 90, 8) 0%, rgb(88, 0, 0) 100.2%);
 }
 .botonera {
   margin-left: 25px;
@@ -89,6 +93,7 @@ text-align: center; /* Centra la imagen */
 max-width: 100%; /* Ajusta al ancho del contenedor */
 max-height: 100%; /* Ajusta al alto del contenedor */
 }
+
 
 .botonera {
 display: inline-flex;

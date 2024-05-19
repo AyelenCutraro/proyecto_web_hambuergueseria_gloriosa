@@ -64,6 +64,7 @@ body, h1, h2, p, ul, li {
 .owl-carousel .owl-stage {
   position: relative;
   -ms-touch-action: pan-Y;
+  touch-action: pan-Y;
 }
 .owl-carousel .owl-stage:after {
   content: ".";
@@ -78,6 +79,7 @@ body, h1, h2, p, ul, li {
   overflow: hidden;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -110,6 +112,7 @@ body, h1, h2, p, ul, li {
   min-height: 1px;
   float: left;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -121,6 +124,7 @@ body, h1, h2, p, ul, li {
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
+  transform-style:preserve-3d;
 }
 .owl-carousel.owl-text-select-on .owl-item {
   -webkit-user-select: auto;
@@ -182,6 +186,7 @@ body, h1, h2, p, ul, li {
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
+  backface-visibility:hidden;
   -webkit-transition: scale 100ms ease;
   -moz-transition: scale 100ms ease;
   -ms-transition: scale 100ms ease;
@@ -218,10 +223,34 @@ body, h1, h2, p, ul, li {
   position: relative;
   z-index: 1;
 } 
-
-.carousel-caption .sedgwick-ave-display-regular{
-  font-size: 5vw;
+/************************************************************************************************************************/
+/* Cartel "Nueva" dentro del carrusel */
+.carousel-caption {
+/*  width:100%;
+  left: 0;
+  right: 0;*/
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
+  padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
+  border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
 }
+
+.carousel-caption .sedgwick-ave-display-regular {
+  color:gold;
+  font-size: 4vw;
+}
+
+.carousel-caption span {
+  color: #fff; /* Texto blanco para mayor contraste */
+}
+
+.carousel-caption .sedgwick-ave-display-regular,
+.carousel-caption .kalam-bold,
+.carousel-caption .kalam-regular {
+  display: block;
+  margin: 1px 0; /* Margen entre las líneas de texto */
+}
+
+/************************************************************************************************************************/
 
 body {
   display: flex;
@@ -276,7 +305,7 @@ main {
   font-family: 'kalam-bold';
   font-size: 3vw ;
   text-align: center;
-  color: white;
+  color: rgb(255, 230, 7);
 }
 
 .carousel-item{

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,8 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
     </script>
+     <script src="./assets/js/validaciones.js">
+    </script>
     <title>Reservas</title>
 </head>
 <body>
@@ -29,8 +31,8 @@
             <li><a href="./productos.html">Productos</a></li>
             <li><a href="./novedades.html">Novedades</a></li>  
             <li><a href="./nosotros.html">Nosotros</a></li>
-            <li><i class="fab fa-facebook-square"></i></li> 
-            <li><i class="fab fa-instagram"></i></li>
+            <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </nav>
 </header> 
@@ -55,38 +57,44 @@
                     con nadie.</small>
                 <br> 
                 <label for="fecha"><b>Elija la fecha:</b></label>
-                <input type="date"  class="form-control" name="fecha" id="fecha" required>
+                <input type="date" class="form-control" name="fecha" id="fecha" required>
                 <br> 
                 <label for="cantPers"><b>Cantidad de personas:</b></label>
-                <select name="cantPers"  class="form-control" id="cantPers" required>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                    <option>13</option>
-                    <option>14</option>
-                    <option>15</option>
-                    <option>16</option>
-                    <option>17</option>
-                    <option>18</option>
-                    <option>19</option>
-                    <option>20</option>
+                <select name="cantPers" class="form-control" id="cantPers" required>
+                    <option value="" disabled selected hidden>Seleccione un número</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
                 </select>
                 <br>
+                <p>Si vas a festejar tu cumpleaños subí la foto de tu DNI y la torta va de regalo</p>
+                <input type="file" name="imagen" id="imagen"  class="form-control" accept="image/*">
+                <br>
                 <b>Entre las personas hay menores?</b>
+                <br>
             <div class="form-group form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Si</label>
             </div>
             <br>
+            
         <div class="botonera">
             <button type="reset" class="btn btn-primary">Limpiar</button>
             <button type="submit" class="btn btn-primary">Cancelar</button>
@@ -95,7 +103,7 @@
             <br><br>
         </form>
         <div class="image-container">
-            <img src="./assets/Imagenes/reservas/446_709_RESERVA.png" alt="reserva.png">
+            <img src="assets/Imagenes/reservas/reservado.png" alt="reserva.png">
         </div>
     </div>
 </main>

@@ -3,17 +3,34 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
+h1 {
+    font-size: 3vw;
+}
+
+.enlace-boton {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-align: center;
+}
+
 /********************************************** Celulares mediaQueri ********************************************************/
+
 @media only screen and (max-width: 650px) {
     body {
         /* Títulos del nav */
         font-family: "Kalam", cursive;
-        background-image: url(./assets/Imagenes/fondos/paraCelular.png);
-        background-size: cover;
+       b: url(./assets/Imagenes/fondos/burgerSmall.jpg);
+        background-color: rgba(255, 255, 255, 0.8);
+        background-size:cover;
         position: relative;
     }
     /* Título Bienvenidos a Gloriosa Burgers! */
-    .section1{
+    .section1 {
         color: black;
         text-align: center;
         font-size: 5vw;
@@ -32,26 +49,23 @@ body, h1, h2, p, ul, li {
 
     /* Títulos del menú */
     .section {
-        text-align: center;
-        display: grid;
-        gap: 5px;
-        grid-template-rows: repeat(2, 1fr);
-        padding: 15px 15px;
-        width: 20vW;
-        min-width: 90vw;
-        max-width: max-content;
-        text-align: center;
         color: white;
+        text-align: center;
+        font-size: 3.5vw;
+        padding: 20px 20px;
         margin-top: 20px;
-        margin-bottom: 20px;
+        width: 20vW;
+        min-width: 85vw;
+        max-width: max-content;
         background-color:rgba(7, 153, 179, 0.6); 
         border-radius: 40%;
         transition: transform 0.5s ease-in-out;
         border: none; /* Añadido para eliminar el borde del botón */
     }
-
+   
     .opciones{
-        margin-bottom: 60px;
+        margin-bottom: 56px;
+        margin-left: 7px;
     }
 
     /* Añadido para hacer el botón transparente */
@@ -67,6 +81,10 @@ body, h1, h2, p, ul, li {
         color: black;
         background-color: rgb(82, 173, 123);
         border-bottom-style: dotted;
+
+        .enlace-boton {
+            color: black;
+        }
     }  
 }
 
@@ -101,10 +119,11 @@ body, h1, h2, p, ul, li {
         max-width:min-content;
         text-align: center;
         color: white;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 10px;
+        padding-top: 40px;
         margin-bottom: 5px;
-        background-color: rgb(37, 102, 37, 0.5);
+        background-color: rgb(37, 102, 37, 0.8);
         border-radius: 40%;
         border-bottom-style:dotted;
         transition: transform 0.5s ease-in-out;
@@ -136,10 +155,14 @@ body, h1, h2, p, ul, li {
         color: black;
         background-color: rgb(57, 196, 184); 
         border-bottom-style:dotted;
+
+        .enlace-boton {
+            color: black;
+        }
     } 
 
     .opciones{
-        margin-bottom: 200px;
+        margin-bottom:410px;
     }
 }
 
@@ -159,7 +182,7 @@ body, h1, h2, p, ul, li {
     }
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
-        margin-top: -30px;
+        margin-top: -10px;
         font-size: 2.5vw;
         text-align: center;
 }
@@ -173,7 +196,6 @@ body, h1, h2, p, ul, li {
         max-width:min-content;
         text-align: center;
         margin-top: -20px;
-        margin-bottom: 10px;
     }
 
      /* Títulos del menú */   
@@ -184,10 +206,10 @@ body, h1, h2, p, ul, li {
         min-width: 65vw;
         max-width: min-content;
         text-align: center;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-left: 10px;
         margin-bottom: 20px;
-
+        padding-top: 30px;
         background-color: rgba(87, 1, 72, 0.5); /* Cambiado a transparente */
         border-radius: 40%;
         border-bottom-style: dotted;
@@ -203,13 +225,17 @@ body, h1, h2, p, ul, li {
 
     .section:hover {
         transform: scale(1.05) translateY(-10px);
-        color: black;
         background-color: rgb(198, 240, 9); 
         border-bottom-style:dotted;
+        border-color: rgb(0, 0, 0);
+
+        .enlace-boton {
+            color: black;
+        }
     } 
 
     .opciones{
-        margin-bottom: 160px;
+        margin-bottom: 160px
     }
 }
 
