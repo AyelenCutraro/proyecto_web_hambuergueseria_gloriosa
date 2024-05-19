@@ -16,6 +16,10 @@ color: black;
   color:black;
 }
 
+.btn-primary {
+  background-color: black;
+  }
+  
 /*---------------------- CELULARES ----------------------------*/
 @media only screen and (max-width: 650px) { 
 /* Título Hacé tu reserva aquí... */
@@ -89,6 +93,7 @@ text-align: center; /* Centra la imagen */
 max-width: 100%; /* Ajusta al ancho del contenedor */
 max-height: 100%; /* Ajusta al alto del contenedor */
 }
+
 
 .botonera {
 display: inline-flex;

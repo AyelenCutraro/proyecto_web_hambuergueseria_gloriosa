@@ -24,7 +24,7 @@ h1 {
     body {
         /* Títulos del nav */
         font-family: "Kalam", cursive;
-       b: url(./assets/Imagenes/fondos/paraCelular.png);
+       b: url(./assets/Imagenes/fondos/burgerSmall.jpg);
         background-color: rgba(255, 255, 255, 0.8);
         background-size:cover;
         position: relative;
