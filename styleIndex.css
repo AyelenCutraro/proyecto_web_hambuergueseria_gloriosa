@@ -229,7 +229,7 @@ h1 {
 
      /* Títulos del menú */   
      .section {
-        color: white;
+        color: rgb(253, 116, 3);
         font-size: 1.2vw; 
         width: 10vW;
         min-width: 65vw;
