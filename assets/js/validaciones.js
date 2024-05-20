@@ -1,3 +1,23 @@
+document.getElementById("formulario").addEventListener("submit", function(event) {
+    var nombre = document.getElementById("nombre").value;
+    var apellido = document.getElementById("apellido").value;
+    var telefono = document.getElementById("telefono").value;
+    var email = document.getElementById("email").value;
+    var fecha = document.getElementById("fecha").value;
+    var cantPers = document.getElementById("cantPers").value;
+
+
+
+
+
+
+
+
+
+ 
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Obtener referencias a los elementos del formulario
     var nombreInput = document.getElementById("nombre");
@@ -8,6 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var cantPersSelect = document.getElementById("cantPers");
 
     // Validaciones para el nombre
+    if (nombre?.trim === "") {
+        alert("Por favor, introduce tu nombre");
+        event.preventDefault();
+    }
+
     nombreInput.addEventListener("blur", function() {
         validarNombre();
     });
@@ -21,6 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Validaciones para el apellido
+    if (!apellido?.trim()) {
+        alert("Por favor, introduce tu apellido");
+        event.preventDefault();
+    }
+
     apellidoInput.addEventListener("blur", function() {
         validarApellido();
     });
@@ -34,6 +64,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Validar teléfono para que no contenga letras
+    if (!telefono?.trim === "") {
+        alert("Por favor, introduce tu teléfono");
+        event.preventDefault();
+    }
+
     telefonoInput.addEventListener("keyup", function() {
         if (!/^\d+$/.test(telefonoInput.value)) {
             telefonoInput.setCustomValidity("Solo se permiten números en el teléfono.");
@@ -42,7 +77,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Validaciones para el correo electrónico
+    // Validaciones para el correo 
+    if (email?.trim === "" && !email.includes('@')) {
+        alert("Por favor, introduce un email valido");
+        event.preventDefault();
+    }
+    
     emailInput.addEventListener("blur", function() {
         validarEmail();
     });
@@ -58,6 +98,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     // Validaciones para la fecha
+    if (fecha?.trim === "") {
+        alert("Por favor, selecciona una fecha");
+        event.preventDefault();
+    }
+
     fechaInput.addEventListener("blur", function() {
         var fechaSeleccionada = new Date(fechaInput.value);
         var fechaActual = new Date();
@@ -77,11 +122,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Validar que se seleccione al menos una persona en el select
+    if (cantPers?.trim === "") {
+        alert("Por favor, selecciona la cantidad de personas");
+        event.preventDefault();
+    }
+);
     cantPersSelect.addEventListener("blur", function() {
         if (cantPersSelect.value === "0") {
             cantPersSelect.setCustomValidity("Debe seleccionar al menos una persona.");
         } else {
             cantPersSelect.setCustomValidity("");
         }
-    });
-});
+    })}
+
