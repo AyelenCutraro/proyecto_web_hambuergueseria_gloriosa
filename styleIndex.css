@@ -113,6 +113,7 @@ h1 {
         background-image: url(./assets/Imagenes/fondos/tablet2.jpg);
         opacity: 0.8;
         position: absolute;
+        background-size:cover;
         top: 0;
         left: 0;
         right: 0;
