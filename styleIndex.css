@@ -41,8 +41,8 @@ h1 {
         /* Títulos del nav */
         font-family: "Kalam", cursive;
         background-size:cover;
-        left: 2px;
     }
+
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
         color: black;
@@ -51,7 +51,6 @@ h1 {
         margin-top: -10px;
         margin-bottom: 20px;
     }
-
 
     /* Título Qué te gustaría? */
     .section2 {
