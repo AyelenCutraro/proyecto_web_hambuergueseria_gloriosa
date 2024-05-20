@@ -21,11 +21,11 @@ h1 {
 /********************************************** Celulares mediaQueri ********************************************************/
 
 @media only screen and (max-width: 650px) {
-    .elemento {
+    body {
         position: relative;
     }
     
-    .elemento::before {
+    body::before {
         content: "";
         background-image: url(./assets/Imagenes/fondos/paraCelular.png);
         opacity: 0.6;
@@ -41,7 +41,6 @@ h1 {
         /* Títulos del nav */
         font-family: "Kalam", cursive;
         background-size:cover;
-        position: relative;
     }
     /* Título Bienvenidos a Gloriosa Burgers! */
     .section1 {
