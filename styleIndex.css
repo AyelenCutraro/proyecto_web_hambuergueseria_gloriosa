@@ -111,7 +111,6 @@ h1 {
     body::before {
         content: "";
         background-image: url(./assets/Imagenes/fondos/burgerMed.jpg);
-        opacity: 0.8;
         position: absolute;
         background-size:cover;
         top: 0;
@@ -137,7 +136,7 @@ h1 {
         margin-left: 10px;
         font-size: 3vw;
         text-align: center;
-        color: rgb(31, 1, 56);
+        color: gold;
     }
 
     /* Títulos del menú */
