@@ -93,7 +93,7 @@ h1 {
         transform: scale(1.05) translateY(-10px);
         transition: transform 0.3s ease;
         color: black;
-        background-color: rgb(82, 173, 123);
+        background-color: rgb(2, 113, 117);
         border-bottom-style: dotted;
 
         .enlace-boton {
