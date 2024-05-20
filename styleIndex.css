@@ -110,7 +110,7 @@ h1 {
     
     body::before {
         content: "";
-        background-image: url(./assets/Imagenes/fondos/tablet2.jpg);
+        background-image: url(./assets/Imagenes/fondos/fondoMed.png);
         opacity: 0.8;
         position: absolute;
         background-size:cover;
