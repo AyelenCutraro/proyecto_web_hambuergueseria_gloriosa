@@ -110,7 +110,7 @@ h1 {
     
     body::before {
         content: "";
-        background-image: url(./assets/Imagenes/fondos/600x400.png);
+        background-image: url(./assets/Imagenes/fondos/burger-4829526_640.jpg);
         opacity: 0.8;
         position: absolute;
         background-size:cover;
