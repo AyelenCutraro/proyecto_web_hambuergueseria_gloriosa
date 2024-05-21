@@ -336,9 +336,11 @@ main {
     border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
     max-width: 100%;
     font-size: 4vw;
-    /*margin: 10px 0;*/
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .kalam-bold {
+    font-size: 3.5;
   }
 }
 
