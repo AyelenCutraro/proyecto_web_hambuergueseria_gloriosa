@@ -347,6 +347,12 @@ main {
     font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
     align-items: center !important;
   }
+  .contenedor img {
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 60%;
+    margin-bottom: 5px;
+  }
 }
 
 /* Para Notebooks */
