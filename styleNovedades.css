@@ -331,23 +331,37 @@ body {
 }
 }
 
-/******************************************** Para tablets *****************************************/
-@media (min-width: 651px) and (max-width: 850px) {
-  .related-post {
-    height: 120px;
-    font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
-  }
-  .contenedor {
-    flex-direction: column !important;
-  }
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
-/******************************************* Para teléfonos móviles ********************************/
-@media (max-width: 650px) {
-  .related-post {
-    height: 80px;
-    font-size: 14px; /* Cambiar tamaño de fuente si es necesario */
-    flex-direction: column;
+.contenedor img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.contenedor p {
+  flex: 1;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor {
+      flex-direction: column;
+      align-items: center;
   }
 
+  .contenedor img {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .contenedor p {
+      text-align: center;
+  }
 }
