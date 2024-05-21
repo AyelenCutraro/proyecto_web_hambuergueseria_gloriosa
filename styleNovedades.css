@@ -335,18 +335,25 @@ body {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
+  border: 1px solid #000; /* Borde al contenedor */
+  padding: 10px;
 }
 
 .contenedor img {
   max-width: 100%;
   height: auto;
   margin-right: 20px;
+  border: 1px solid #000; /* Borde a las imágenes */
+  padding: 5px;
 }
 
 .contenedor p {
   flex: 1;
   text-align: justify;
   margin: 0;
+  border: 1px solid #000; /* Borde al texto */
+  padding: 10px;
+  font-size: 1.2em; /* Tamaño de fuente mayor */
 }
 
 /* Media query para pantallas pequeñas */
@@ -359,9 +366,11 @@ body {
   .contenedor img {
       margin-right: 0;
       margin-bottom: 10px;
+      width: 90%; /* Aumentar el tamaño de la imagen */
   }
 
   .contenedor p {
       text-align: center;
+      font-size: 1.4em; /* Aumentar más el tamaño de fuente para móviles */
   }
 }
