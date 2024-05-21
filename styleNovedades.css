@@ -313,9 +313,6 @@ main {
   font-size: 2vw;
 }
 
-.kalam-bold {
-  font-size: 3vw;
-}
 
 /******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
@@ -346,6 +343,10 @@ main {
 
 /************************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
+  .kalam-bold {
+    font-size: 3vw;
+  }
+  
   .related-post {
     height: 120px;
     font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
@@ -369,6 +370,9 @@ main {
 
 /************************************************* Para Notebooks *******************************************/
 @media (min-width: 851px) {
+  .kalam-bold {
+    font-size: 3vw;
+  }
   .mapa {
     width: 100%;
   }
