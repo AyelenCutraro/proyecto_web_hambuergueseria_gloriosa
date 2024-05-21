@@ -51,7 +51,7 @@ body, h1, h2, p, ul, li {
 /********************************** Celulares MediaQueri ********************************************/
 .contenido{
     display:grid;
-    grid-column: 1 / -1;
+    grid-column: 3/ -1;
     max-width: 1200px;
     width: 100%;
     margin: 40px auto;
