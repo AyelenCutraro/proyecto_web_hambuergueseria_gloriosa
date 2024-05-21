@@ -337,6 +337,8 @@ main {
     max-width: 100%;
     font-size: 4vw;
     margin: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
