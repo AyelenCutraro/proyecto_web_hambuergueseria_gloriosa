@@ -255,7 +255,7 @@ body, h1, h2, p, ul, li {
 body {
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
+  background: radial-gradient(circle at 10% 20%, rgb(110, 24, 24) 0%, rgba(241, 2, 2, 0.445) 90%);
 
   .carousel-inner img {
     display:flexbox;
@@ -351,7 +351,7 @@ body {
 }
 
 .contenedor p {
-  margin: 0;
+  margin-left: -20px;
   border: 1px solid #000; /* Borde al texto */
   padding: 10px;
   font-size: 1.6em; /* Tamaño de fuente mayor */
