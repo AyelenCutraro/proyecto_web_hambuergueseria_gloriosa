@@ -255,7 +255,7 @@ body, h1, h2, p, ul, li {
 body {
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
+  background: radial-gradient(circle at 10% 20%, rgb(250, 44, 44) 0%, rgb(136, 1, 1) 90%);
 
   .carousel-inner img {
     display:flexbox;
@@ -272,7 +272,7 @@ body {
      margin-right: 20px;
      margin-left: 100px;
      max-width: 60%;
-     margin-bottom: px
+     margin-bottom: 5px
     }
  .contenedor p {
      margin-top: 20px;
@@ -304,7 +304,6 @@ main {
 }
 
 .nuevaSucursal {
-  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
   font-family: 'kalam-bold';
   font-size: 3vw ;
   text-align: center;
@@ -319,19 +318,14 @@ font-size: 2vW;
 }
 }
 
-.mapa {
-  display: flex !important;
-  align-items: center !important;
-  flex-direction: column !important;
-  margin-bottom: 2PX;
-
-body {
-  display: flex !important;
-  flex-direction: column !important;
-  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
-  align-items: center !important;
-
-}
+/* Para teléfonos móviles */
+@media (max-width: 650px) {
+  .related-post {
+    height: 80px;
+    font-size: 14px; /* Cambiar tamaño de fuente si es necesario */
+    flex-direction: column;
+    align-items: center !important;
+  }
 }
 
 /* Para tablets */
@@ -343,12 +337,12 @@ body {
   }
 }
 
-/* Para teléfonos móviles */
-@media (max-width: 650px) {
-  .related-post {
-    height: 80px;
-    font-size: 14px; /* Cambiar tamaño de fuente si es necesario */
-    flex-direction: column;
-    align-items: center !important;
+/* Para Notebooks */
+@media (min-width: 851px){
+  .mapa {
+    width: 100%;
+
   }
 }
+
+
