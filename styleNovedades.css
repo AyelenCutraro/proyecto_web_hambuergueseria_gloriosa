@@ -324,53 +324,57 @@ font-size: 2vW;
   margin-bottom: 2PX;
   
 
+/* Estilos generales */
 body {
-  display: flex !important;
-  flex-direction: column !important;
-  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
-}
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
 }
 
 .contenedor {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
   border: 1px solid #000; /* Borde al contenedor */
   padding: 10px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Fondo degradado llamativo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  max-width: 90%;
+  text-align: center;
 }
 
 .contenedor img {
   max-width: 100%;
   height: auto;
-  margin-right: 20px;
   border: 1px solid #000; /* Borde a las imágenes */
   padding: 5px;
+  background-color: #fff; /* Fondo blanco detrás de las imágenes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
 }
 
 .contenedor p {
-  flex: 1;
-  text-align: justify;
   margin: 0;
   border: 1px solid #000; /* Borde al texto */
   padding: 10px;
   font-size: 1.2em; /* Tamaño de fuente mayor */
+  background-color: #fff; /* Fondo blanco detrás del texto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el texto */
+  max-width: 90%;
 }
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
-  .contenedor {
-      flex-direction: column;
-      align-items: center;
-  }
-
   .contenedor img {
-      margin-right: 0;
-      margin-bottom: 10px;
       width: 90%; /* Aumentar el tamaño de la imagen */
   }
 
   .contenedor p {
-      text-align: center;
       font-size: 1.4em; /* Aumentar más el tamaño de fuente para móviles */
   }
 }
