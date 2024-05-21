@@ -336,14 +336,12 @@ body {
   background-color: #f0f0f0;
   color:#000;
 }
-
 .contenedor {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #000; /* Borde al contenedor */
   padding: 10px;
-  background: linear-gradient(135deg, #d61d1d 0%, #fd7b02 100%); /* Fondo degradado llamativo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
   max-width: 90%;
   text-align: center;
@@ -354,7 +352,6 @@ body {
   height: auto;
   border: 1px solid #000; /* Borde a las imágenes */
   padding: 5px;
-  background-color: #fff; /* Fondo blanco detrás de las imágenes */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
 }
 
@@ -363,7 +360,6 @@ body {
   border: 1px solid #000; /* Borde al texto */
   padding: 10px;
   font-size: 1.6em; /* Tamaño de fuente mayor */
-  background-color: #fff; /* Fondo blanco detrás del texto */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el texto */
   max-width: 90%;
 }
@@ -376,5 +372,21 @@ body {
 
   .contenedor p {
       font-size: 1.4em; /* Aumentar más el tamaño de fuente para móviles */
+  }
+}
+/* Para tablets */
+@media (min-width: 651px) and (max-width: 850px) {
+  .related-post {
+    height: 120px;
+    font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
+  }
+}
+
+/* Para teléfonos móviles */
+@media (max-width: 650px) {
+  .related-post {
+    height: 80px;
+    font-size: 14px; /* Cambiar tamaño de fuente si es necesario */
+    flex-direction: column;
   }
 }
