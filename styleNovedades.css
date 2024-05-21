@@ -349,9 +349,17 @@ main {
   }
   .contenedor img {
     margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 10px;
     max-width: 60%;
     margin-bottom: 5px;
+  }
+  .contenedor p {
+    margin-right: 50px;
+    margin-top: 20px;
+    max-width: 60%;
+    color: white;
+    font-size: 1.6vw;
+    text-align: justify;
   }
 }
 
