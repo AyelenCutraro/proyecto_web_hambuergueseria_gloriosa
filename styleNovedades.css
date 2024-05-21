@@ -226,9 +226,9 @@ body, h1, h2, p, ul, li {
 /************************************************************************************************************************/
 /* Cartel "Nueva" dentro del carrusel */
 .carousel-caption {
-  width:50%;
+  /*width:50%;
   left: 0;
-  right: 0;
+  right: 0;*/
   background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
   padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
   border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
