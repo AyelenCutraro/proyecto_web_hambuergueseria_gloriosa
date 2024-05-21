@@ -331,15 +331,12 @@ body {
 }
 }
 
-/* Estilos generales */
 .contenedor {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
   border: 1px solid #000; /* Borde al contenedor */
   padding: 10px;
-  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Fondo degradado llamativo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
 }
 
 .contenedor img {
@@ -348,8 +345,6 @@ body {
   margin-right: 20px;
   border: 1px solid #000; /* Borde a las imágenes */
   padding: 5px;
-  background-color: #fff; /* Fondo blanco detrás de las imágenes */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
 }
 
 .contenedor p {
@@ -359,8 +354,6 @@ body {
   border: 1px solid #000; /* Borde al texto */
   padding: 10px;
   font-size: 1.2em; /* Tamaño de fuente mayor */
-  background-color: #fff; /* Fondo blanco detrás del texto */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el texto */
 }
 
 /* Media query para pantallas pequeñas */
