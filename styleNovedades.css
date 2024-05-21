@@ -317,7 +317,7 @@ main {
   font-size: 3vw;
 }
 
-/* Para teléfonos móviles */
+/******************************************** Para teléfonos móviles ****************************************/
 @media (max-width: 650px) {
   .contenedor {
     flex-direction: column;
@@ -331,6 +331,9 @@ main {
   }
 
   .contenedor p {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
+    padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
+    border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
     max-width: 100%;
     font-size: 4vw;
     margin: 10px 0;
@@ -339,7 +342,7 @@ main {
   }
 }
 
-/* Para tablets */
+/************************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .related-post {
     height: 120px;
@@ -362,7 +365,7 @@ main {
   }
 }
 
-/* Para Notebooks */
+/************************************************* Para Notebooks *******************************************/
 @media (min-width: 851px) {
   .mapa {
     width: 100%;
