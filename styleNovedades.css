@@ -331,19 +331,23 @@ body {
 }
 }
 
-/* Para tablets */
+/******************************************** Para tablets *****************************************/
 @media (min-width: 651px) and (max-width: 850px) {
   .related-post {
     height: 120px;
     font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
   }
+  .contenedor {
+    flex-direction: column !important;
+  }
 }
 
-/* Para teléfonos móviles */
+/******************************************* Para teléfonos móviles ********************************/
 @media (max-width: 650px) {
   .related-post {
     height: 80px;
     font-size: 14px; /* Cambiar tamaño de fuente si es necesario */
     flex-direction: column;
   }
+
 }
