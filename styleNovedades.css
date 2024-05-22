@@ -347,6 +347,10 @@ main {
     font-size: 3vw;
   }
 
+  .mapa {
+    width: 100%;
+  }
+  
   .related-post {
     height: 120px;
     font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
