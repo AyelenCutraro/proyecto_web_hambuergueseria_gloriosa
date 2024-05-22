@@ -139,4 +139,20 @@ body, h1, h2, p, ul, li {
         gap: 1.6em;
         grid-template-columns: repeat(5, 4fr);
     }
+    body {
+        font-size: xx-large;
+
+        h2 {
+            font-size: 2.5vw;
+        }
+        .sidebar{
+            h2 {
+                font-size: 2.5vw;
+                color: #000000;
+            }
+            p {
+                color:#000000;
+            }
+        }
+    }
 }
