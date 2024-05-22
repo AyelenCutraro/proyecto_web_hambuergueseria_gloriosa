@@ -366,7 +366,7 @@ main {
     background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
     padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
     border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 5px;
     max-width: 60%;
     color: white;
