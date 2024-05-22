@@ -75,8 +75,9 @@ footer{
     }
     
     .precio {
-        font-size: 3vw;
+        font-size: 4vw;
     }
+footer{
 
     .grid-container {
         grid-template-columns: 1fr;
@@ -87,5 +88,7 @@ footer{
       .copyright {
         font-size: x-small;
       }
+}
+
     }
 
