@@ -70,6 +70,13 @@ footer{
     }
 
     .grid-container {
-        grid-template-columns: 1fr;
+        font-size: small;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: medium;
+      }
+      
+      .copyright {
+        font-size: small;
+      }
     }
-}
+
