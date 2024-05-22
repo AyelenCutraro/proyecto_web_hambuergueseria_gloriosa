@@ -61,6 +61,12 @@ footer{
     .item {
         width: 45%;
     }
+
+    footer{
+        .grid-container {  
+            font-size: medium;
+            padding-top: 20px;
+          }
  }
 
 /* Estilos para celulares */
@@ -77,8 +83,8 @@ footer{
     .precio {
         font-size: 4vw;
     }
-footer{
 
+footer{
     .grid-container {
         grid-template-columns: 1fr;
         font-size: small;
@@ -89,6 +95,5 @@ footer{
         font-size: x-small;
       }
 }
-
     }
 
