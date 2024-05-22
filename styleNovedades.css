@@ -350,7 +350,7 @@ main {
   .mapa {
     width: 100%;
   }
-  
+
   .related-post {
     height: 120px;
     font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
@@ -359,7 +359,7 @@ main {
   .contenedor img {
     margin-right: 10px;
     margin-left: 10px;
-    max-width: 60%;
+    max-width: 50%;
     margin-bottom: 5px;
   }
   .contenedor p {
