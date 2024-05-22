@@ -11,16 +11,16 @@ body {
 
 .image-container img {
   border: 2px solid black; /* Ajusta el grosor, estilo y color del borde según sea necesario */
-  height: 1000px; /* Ajusta esta altura según tus necesidades */
-  width: auto; /* Mantiene la proporción de la imagen */
 }
 
 .text-muted{
   color:black !important;
 }
+
 .form-check-label{
 color: black;
 }
+
 .form-control{
   background-color: rgb(60, 91, 105);
   border-block-style: unset;
@@ -31,7 +31,6 @@ color: black;
 .btn-primary {
   background-color: black;
   font-size: 1.3vw;
-  border-radius: 20%;
   }
   
 /*---------------------- CELULARES ----------------------------*/
@@ -55,6 +54,13 @@ color: black;
 /* Estilo para el formulario */
 form {
   max-width: 100%; /* Ajusta al ancho del contenedor */
+}
+
+.form-control{
+  background-color: rgb(60, 91, 105);
+  border-block-style: unset;
+  color:black;
+  font-size: 1.3vw;
 }
 
 /* Estilo para la imagen */
