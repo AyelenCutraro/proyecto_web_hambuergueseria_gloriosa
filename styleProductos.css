@@ -65,8 +65,8 @@ footer{
     footer{
         .grid-container {  
             font-size: large;
-            padding: -20px;
-            padding-top: -20px
+            padding: -40px;
+            padding-top: -40px
           }
 
           .descripcion {
