@@ -81,6 +81,7 @@ form {
   .btn-primary {
     background-color: black;
     font-size: 3vw;
+    padding: 20px;
     }
 }
 }
