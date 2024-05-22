@@ -64,8 +64,17 @@ footer{
 
     footer{
         .grid-container {  
-            font-size: medium;
+            font-size: large;
           }
+
+          .descripcion {
+            color:red;
+            font-size: 4vw;
+        }
+        
+        .precio {
+            font-size: 4vw;
+        }
  }
 
 /******************************************* Estilos para celulares ***************************************/
