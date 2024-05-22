@@ -1,97 +1,75 @@
-body, h1, h2, p, ul, li {
+body {
+    font-family: 'Kalam', sans-serif;
     margin: 0;
     padding: 0;
 }
-/************************************************PRODCUTOS*********************************************************/
 
-.contenido{
-    max-width: 1200px;
-    width: 100%;
-    margin: 40px auto;
-    display: flex;
-}
-.mostrador{
-    width: 100%;
-    transition: .5s ease;
-}
-.mostrador .fila{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.contenido {
+    padding: 20px;
 }
 
-.mostrador .fila .item{
-    max-width: 210px;
-    padding: 30px;
-    height: 250px;
-    /*border: 2px solid red;*/
+.mostrador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.item {
+    width: 22%;
+    margin: 10px 0;
     text-align: center;
-    margin: 0 10px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: .3s;
-}
-.mostrador .fila .item:hover{
-    background-color: #e6e6e6;
-}
-.mostrador .fila .item img{
-    width: 100%;
-    margin: 30px 0;
-}
-.mostrador .fila .item .descripcion{
-    color: #707070;
-    font-weight: bold;
-}
-.mostrador .fila .item .precio{
-    color: #f85151;
-    font-weight: bold;
-    font-size: 20px;
-}
-/********************************** Celulares MediaQueri ********************************************/
-.contenido{
-    display:grid;
-    grid-column: 3/ -1;
-    max-width: 1200px;
-    width: 100%;
-    margin: 40px auto;
-    display: flex;
-}
-.mostrador{
-    width: 100%;
-    transition: .5s ease;
-}
-.mostrador .fila{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
 }
 
-.mostrador .fila .item{
-    max-width: 210px;
-    padding: 30px;
-    height: 250px;
-    /*border: 2px solid red;*/
-    text-align: center;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: .3s;
+.contenedor-foto img {
+    max-width: 100%;
 }
-.mostrador .fila .item:hover{
-    background-color: #e6e6e6;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
 }
-.mostrador .fila .item img{
-    width: 100%;
-    margin: 30px 0;
+
+.grid-item {
+    padding: 10px;
 }
-.mostrador .fila .item .descripcion{
-    color: #707070;
-    font-weight: bold;
+.descripcion {
+    color:red;
+    font-size: 2vw;
 }
-.mostrador .fila .item .precio{
-    color: #f85151;
-    font-weight: bold;
-    font-size: 20px;
+
+.precio {
+    font-size: 2vw;
+}
+
+footer{
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: x-large;
+      } 
+}
+
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    .item {
+        width: 45%;
+    }
+ }
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    .item {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
