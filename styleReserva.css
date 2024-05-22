@@ -49,6 +49,7 @@ color: black;
   flex-grow:1;
   gap: 20px; /* Espacio entre columnas */
   padding: 20px;
+  font-size: 3vw;
 }
 
 /* Estilo para el formulario */
