@@ -66,17 +66,26 @@ footer{
 /* Estilos para celulares */
 @media (max-width: 480px) {
     .item {
-        width: 100%;
+        width: 90%;
+    }
+
+    .descripcion {
+        color:red;
+        font-size: 4vw;
+    }
+    
+    .precio {
+        font-size: 3vw;
     }
 
     .grid-container {
+        grid-template-columns: 1fr;
         font-size: small;
-        grid-template-columns: repeat(3, 1fr);
-        font-size: medium;
+        padding-top: 20px;
       }
-      
+    
       .copyright {
-        font-size: small;
+        font-size: x-small;
       }
     }
 
