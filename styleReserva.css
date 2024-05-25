@@ -28,6 +28,16 @@ body {
   font-size: 1.3vw;
 }
 
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.form-check-label {
+  margin-left: 10px;
+}
+
 .btn-primary {
   background-color: black;
   font-size: 1.3vw;
