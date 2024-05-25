@@ -111,6 +111,7 @@ body, h1, h2, p, ul, li {
     }
     .contenedor>.content {
         grid-column: 1 / -1;
+        background-color: 
         linear-gradient(135deg,#0000 18.75%,#5E412F 0 31.25%,#0000 0),
         repeating-linear-gradient(45deg,#5E412F -6.25% 6.25%,#FCEBB6 0 18.75%);
         background-size: var(--s) var(--s); 
@@ -137,5 +138,25 @@ body, h1, h2, p, ul, li {
         display: grid;
         gap: 1.6em;
         grid-template-columns: repeat(5, 4fr);
+    }
+    body {
+        font-size: xx-large;
+
+        h2 {
+            font-size: 2.5vw;
+        }
+        .sidebar{
+            h2 {
+                font-size: 2.5vw;
+                color: white;
+                background: rgba(97, 3, 42);
+                padding: 10px;
+            }
+            p {
+                color: white;
+                background: rgba(97, 3, 42);
+                padding: 16px;
+            }
+        }
     }
 }

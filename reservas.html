@@ -18,8 +18,6 @@
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
     </script>
-     <script src="./assets/js/validaciones.js">
-    </script>
     <title>Reservas</title>
 </head>
 <body>
@@ -41,26 +39,26 @@
     <h1 class="kalam-bold">Hacé tu reserva aquí...</h1>
     </div>
     <div class="contenedor">
-        <form>
+        <form id="formulario">
              <label for="nombre"><b>Nombre:</b></label>
-                <input type="text"  class="form-control" name="nombre" id="nombre" required >
+                <input type="text"  class="form-control" name="nombre" id="nombre">
                 <br> 
                 <label for="apellido"><b>Apellido:</b></label>
-                <input type="text"  class="form-control" name="apellido" id="apellido" required>
+                <input type="text"  class="form-control" name="apellido" id="apellido">
                 <br>  
                 <label for="telefono"><b>Teléfono:</b></label>
-                <input type="tel"  class="form-control" name="telefono" id="telefono" required>
+                <input type="tel"  class="form-control" name="telefono" id="telefono">
                 <br> 
                 <label for="email"><b>Correo electrónico:</b></label>
-                <input type="email"  class="form-control" name="email" id="email" required aria-describedby="emailHelp"> 
+                <input type="email"  class="form-control" name="email" id="email" aria-describedby="emailHelp"> 
                 <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu correo electrónico 
                     con nadie.</small>
                 <br> 
                 <label for="fecha"><b>Elija la fecha:</b></label>
-                <input type="date" class="form-control" name="fecha" id="fecha" required>
+                <input type="date" class="form-control" name="fecha" id="fecha">
                 <br> 
                 <label for="cantPers"><b>Cantidad de personas:</b></label>
-                <select name="cantPers" class="form-control" id="cantPers" required>
+                <select name="cantPers" class="form-control" id="cantPers">
                     <option value="" disabled selected hidden>Seleccione un número</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -84,7 +82,7 @@
                     <option value="20">20</option>
                 </select>
                 <br>
-                <p>Si vas a festejar tu cumpleaños subí la foto de tu DNI y la torta va de regalo</p>
+                <p><b>Si vas a festejar tu cumpleaños subí la foto de tu DNI y la torta va de regalo</b></p>
                 <input type="file" name="imagen" id="imagen"  class="form-control" accept="image/*">
                 <br>
                 <b>Entre las personas hay menores?</b>
@@ -103,6 +101,7 @@
             <br><br>
         </form>
         <div class="image-container">
+            <br>
             <img src="assets/Imagenes/reservas/reservado.png" alt="reserva.png">
         </div>
     </div>
@@ -121,5 +120,6 @@
     </div>      
     <div class="copyright kalam-regular">&copy; 2024 Gloriosa Burgers. Todos los derechos reservados.</div>
 </footer>
+<script src="./assets/js/validaciones.js"></script>
 </body>
 </html>

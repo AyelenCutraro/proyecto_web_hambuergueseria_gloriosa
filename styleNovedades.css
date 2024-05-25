@@ -226,9 +226,6 @@ body, h1, h2, p, ul, li {
 /************************************************************************************************************************/
 /* Cartel "Nueva" dentro del carrusel */
 .carousel-caption {
-/*  width:100%;
-  left: 0;
-  right: 0;*/
   background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
   padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
   border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
@@ -255,94 +252,152 @@ body, h1, h2, p, ul, li {
 body {
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%);
+  background: radial-gradient(circle at 10% 20%, rgb(250, 44, 44) 0%, rgb(136, 1, 1) 90%);
+}
 
-  .carousel-inner img {
-    display:flexbox;
-     width:100%;
-     height:50vW;
- }
- .contenedor {
-     display: flex;
-     align-items: center;
-     justify-content: flex-start;
-     margin-top: 20px;
- }
- .contenedor img {
-     margin-right: 20px;
-     max-width: 50%;
- }
- .contenedor p {
-     max-width: 50%;
-     color:white;
-     font-size: 1.6vw;
-     text-align: justify;
- }
+.carousel-inner img {
+  width: 100%;
+  height: 50vw;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.contenedor img {
+  margin-right: 20px;
+  margin-left: 100px;
+  max-width: 60%;
+  margin-bottom: 5px;
+}
+
+.contenedor p {
+  margin-top: 20px;
+  max-width: 60%;
+  color: white;
+  font-size: 1.6vw;
+  text-align: justify;
 }
 
 main {
-    flex-grow: 1;
-  }
-
-  .contenedor>.sidebar {
-    grid-column: span 2;
-    grid-row: span 4;
-    background: rgb(250, 247, 248);
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  flex-grow: 1;
 }
 
-.contenedor>.sidebar img {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
+.contenedor > .sidebar {
+  grid-column: span 2;
+  grid-row: span 4;
+  background: rgb(250, 247, 248);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor > .sidebar img {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
 }
 
 .nuevaSucursal {
-  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
   font-family: 'kalam-bold';
-  font-size: 3vw ;
+  font-size: 3vw;
   text-align: center;
   color: rgb(255, 230, 7);
 }
 
-.carousel-item{
-font-size: 2vW;
-
-.kalam-bold{
-  font-size: 3vw;
-}
+.carousel-item {
+  font-size: 2vw;
 }
 
-.mapa {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  flex-direction: column !important;
-  margin-bottom: 2PX;
 
-body {
-  display: flex !important;
-  flex-direction: column !important;
-  background: linear-gradient(to bottom right, #0000ff, #800080, #ff69b4 );
-}
+/******************************************** Para teléfonos móviles ****************************************/
+@media (max-width: 650px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenedor img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .contenedor p {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
+    padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
+    border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
+    max-width: 100%;
+    font-size: 4vw;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .kalam-bold {
+    font-size: 3.5;
+  }
 }
 
-/* Para tablets */
+/************************************************** Para tablets ********************************************/
 @media (min-width: 651px) and (max-width: 850px) {
+  .kalam-bold {
+    font-size: 3vw;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
   .related-post {
     height: 120px;
     font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
+    align-items: center !important;
+  }
+  .contenedor img {
+    margin-right: 20px;
+    margin-left: 10px;
+    max-width: 51%;
+    margin-bottom: 5px;
+  }
+  .contenedor p {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
+    padding: 15px; /* Espaciado interno para que el texto no quede pegado al borde */
+    border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
+    margin-right: 10px;
+    margin-top: 5px;
+    max-width: 60%;
+    color: white;
+    font-size: 2.4vw;
+    text-align: justify;
   }
 }
 
-/* Para teléfonos móviles */
-@media (max-width: 650px) {
-  .related-post {
-    height: 80px;
-    font-size: 14px; /* Cambiar tamaño de fuente si es necesario */
-    flex-direction: column;
+/************************************************* Para Notebooks *******************************************/
+@media (min-width: 851px) {
+  .kalam-bold {
+    font-size: 3vw;
+  }
+  .mapa {
+    width: 100%;
+  }
+  .contenedor img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .contenedor p {
+    background-color: rgba(8, 8, 8, 0.5); /* Fondo negro con 50% de transparencia */
+    padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
+    border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
+    max-width: 100%;
+    font-size: 2.4vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -4px;
+    padding-bottom: 26px;
   }
 }
+
