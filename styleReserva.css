@@ -18,175 +18,199 @@ body {
 }
 
 .form-check-label{
-color: black;
+  color: black;
 }
 
-.form-control{
+.form-control {
   background-color: rgb(60, 91, 105);
   border-block-style: unset;
-  color:black;
+  color: black;
   font-size: 1.3vw;
 }
 
 .btn-primary {
   background-color: black;
   font-size: 1.3vw;
-  }
-  
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid::after {
+  content: attr(data-error-message);
+  color: red;
+  font-size: 1.5em;
+}
+
 /**************************************************************** CELULARES *******************************************************************/
-@media only screen and (max-width: 650px) { 
-/* Título Hacé tu reserva aquí... */
-.titulo{
-  padding-top: 20px;
-  padding-left: 20px !important;
-  color: gold;
-  font-size: 3vw;
-  overflow: hidden;
-}
+@media only screen and (max-width: 650px) {
+  .titulo {
+    padding-top: 20px;
+    padding-left: 20px !important;
+    color: gold;
+    font-size: 3vw;
+    overflow: hidden;
+  }
 
- /* Estilo para el contenedor principal */
- .contenedor {
-  flex-grow:1;
-  gap: 20px; /* Espacio entre columnas */
-  padding: 20px;
-  font-size: 3vw;
-}
+  /* Estilo para el contenedor principal */
+  .contenedor {
+    flex-grow: 1;
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px;
+    font-size: 3vw;
+  }
 
-/* Estilo para el formulario */
-form {
-  max-width: 100%; /* Ajusta al ancho del contenedor */
-}
+  /* Estilo para el formulario */
+  form {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+  }
 
-.form-control{
-  background-color: rgb(60, 91, 105);
-  border-block-style: unset;
-  color:black;
-  font-size: 3vw;
-}
+  .form-control {
+    background-color: rgb(60, 91, 105);
+    border-block-style: unset;
+    color: black;
+    font-size: 3vw;
+  }
 
-/* Estilo para la imagen */
-.image-container {
-  text-align: center; /* Centra la imagen */
-}
+  /* Estilo para la imagen */
+  .image-container {
+    text-align: center; /* Centra la imagen */
+  }
 
-.image-container img {
-  max-width: 100%; /* Ajusta al ancho del contenedor */
-  max-height: 100%; /* Ajusta al alto del contenedor */
-  background: radial-gradient(circle at 0.2% 1.8%, rgb(255, 90, 8) 0%, rgb(88, 0, 0) 100.2%);
-}
-.botonera {
-  margin-left: 30px;
-  padding: 5px;
+  .image-container img {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+    max-height: 100%; /* Ajusta al alto del contenedor */
+    background: radial-gradient(circle at 0.2% 1.8%, rgb(255, 90, 8) 0%, rgb(88, 0, 0) 100.2%);
+  }
+
+  .botonera {
+    margin-left: 30px;
+    padding: 5px;
+  }
 
   .btn-primary {
     background-color: black;
     font-size: 3vw;
     padding: 10px;
     margin-left: 20px;
-    }
-}
+  }
 }
 
 .contenedor {
   grid-column: 1 / -1;
 }
+
 .contenedor {
-grid-column: 5 / 6;
+  grid-column: 5 / 6;
 }
 
 /******************************************************** TABLETS **************************************************************************/
-@media only screen and (min-width: 651px) and (max-width: 850px)  {
+@media only screen and (min-width: 651px) and (max-width: 850px) {
   .titulo {
     padding-top: 20px !important;
     padding-left: 20px !important;
     color: gold;
   }
-/* Estilo para el contenedor principal */
-.contenedor {
-/*flex-grow:1;*/
-gap: 20px; /* Espacio entre columnas */
-padding: 20px;
-padding: 20px;
-font-size: 3vw;
-}
 
-.form-control{
-  background-color: rgb(60, 91, 105);
-  border-block-style: unset;
-  color:black;
-  font-size: 3vw;
-}
+  /* Estilo para el contenedor principal */
+  .contenedor {
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px;
+    font-size: 3vw;
+  }
 
-/* Estilo para el formulario */
-form {
-max-width: 100%; /* Ajusta al ancho del contenedor */
-}
+  .form-control {
+    background-color: rgb(60, 91, 105);
+    border-block-style: unset;
+    color: black;
+    font-size: 3vw;
+  }
 
-/* Estilo para la imagen */
-.image-container {
-text-align: center; /* Centra la imagen */
-}
+  /* Estilo para el formulario */
+  form {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+  }
 
-.image-container img {
-max-width: 100%; /* Ajusta al ancho del contenedor */
-max-height: 100%; /* Ajusta al alto del contenedor */
-}
+  /* Estilo para la imagen */
+  .image-container {
+    text-align: center; /* Centra la imagen */
+  }
 
-.botonera {
-display: inline-flex;
-flex-direction: row;
-padding-left: 150px;
-gap: 50px;
+  .image-container img {
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+    max-height: 100%; /* Ajusta al alto del contenedor */
+  }
 
-.btn-primary {
-  background-color: black;
-  font-size: 3vw;
-  padding: 10px;
-  margin-left: 20px;
+  .botonera {
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 150px;
+    gap: 50px;
+  }
+
+  .btn-primary {
+    background-color: black;
+    font-size: 3vw;
+    padding: 10px;
+    margin-left: 20px;
   }
 }
-}
+
 /******************************************************** NOTEBOOKS *************************************************************************/
-@media only screen and (min-width: 851px)  {
-  .titulo{
+@media only screen and (min-width: 851px) {
+  .titulo {
     padding-top: 20px !important;
     padding-left: 20px !important;
     color: gold;
     font-size: 3vw;
   }
+
   /* Estilo para el contenedor principal */
-.contenedor{
+  .contenedor {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
     gap: 20px; /* Espacio entre columnas */
     padding: 20px;
-}
+  }
 
-/* Estilo para el formulario */
-form {
-  font-size: larger;
-  max-width: 100%; /* Ajusta al ancho del contenedor */
-}
+  /* Estilo para el formulario */
+  form {
+    font-size: larger;
+    max-width: 100%; /* Ajusta al ancho del contenedor */
+  }
 
-/* Estilo para la imagen */
-.image-container {
+  .form-control {
+    font-size: 1.5vw; /* Incrementa el tamaño del calendario */
+  }
+
+  /* Estilo para la imagen */
+  .image-container {
     text-align: center; /* Centra la imagen */
-}
+  }
 
-.image-container img {
+  .image-container img {
     max-width: 100%; /* Ajusta al ancho del contenedor */
     max-height: 100%; /* Ajusta al alto del contenedor */
-}
+  }
 
-.image-container {
-  display: block;
-  width: 100%;
-  margin-top: 5px;
-}
-.botonera {
-  display: inline-flex;
-  flex-direction: row;
-  padding-left: 170px;
-  gap: 50px;
+  .image-container {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .botonera {
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 170px;
+    gap: 50px;
+  }
+
+  .btn-primary {
+    background-color: black;
+    font-size: 1.5vw;
+    padding: 10px;
+    margin-left: 20px;
   }
 }

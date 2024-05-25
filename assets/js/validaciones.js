@@ -20,30 +20,37 @@ document.addEventListener("DOMContentLoaded", function() {
         if (nombre === "") {
             alert("Por favor, introduce tu nombre");
             event.preventDefault();
+            return;
         } else if (!/^[a-zA-Z\s]+$/.test(nombre)) {
             alert("Solo se permiten letras y espacios en el nombre.");
             event.preventDefault();
+            return;
         }
 
         if (apellido === "") {
             alert("Por favor, introduce tu apellido");
             event.preventDefault();
+            return;
         } else if (!/^[a-zA-Z\s]+$/.test(apellido)) {
             alert("Solo se permiten letras y espacios en el apellido.");
             event.preventDefault();
+            return;
         }
 
         if (telefono === "") {
             alert("Por favor, introduce tu teléfono");
             event.preventDefault();
+            return;
         } else if (!/^\d+$/.test(telefono)) {
             alert("Solo se permiten números en el teléfono.");
             event.preventDefault();
+            return;
         }
 
         if (email === "" || !/^[^\s@]+@[^\s@]+\.(com|us|ar|museum|uk|de|jp|fr|cn|br|es|au|org|net|edu|gov|mil)$/i.test(email)) {
             alert("Por favor, introduce un email válido");
             event.preventDefault();
+            return;
         }
 
         var fechaSeleccionada = new Date(fecha);
@@ -52,18 +59,21 @@ document.addEventListener("DOMContentLoaded", function() {
         if (fecha === "" || fechaSeleccionada < fechaActual) {
             alert("La fecha no puede ser anterior a la fecha actual.");
             event.preventDefault();
+            return;
         } else {
             var fechaMaxima = new Date();
             fechaMaxima.setMonth(fechaMaxima.getMonth() + 2);
             if (fechaSeleccionada > fechaMaxima) {
                 alert("La reserva solo puede realizarse con un máximo de dos meses de anticipación.");
                 event.preventDefault();
+                return;
             }
         }
 
         if (cantPers === "" || cantPers === "0") {
             alert("Por favor, selecciona la cantidad de personas");
             event.preventDefault();
+            return;
         }
     }
 
