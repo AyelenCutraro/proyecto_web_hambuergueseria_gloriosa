@@ -31,6 +31,10 @@
     font-size: x-large;
   }
   
+  .grid-item {
+    padding: 10px;
+}
+  
   .copyright {
     font-size: large;
   }

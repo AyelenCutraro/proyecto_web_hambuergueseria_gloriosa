@@ -3,9 +3,9 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
- /* Background pattern */
+
  body {
-  --s: 150px; /* control the size */
+  --s: 150px; 
   
   background:
     linear-gradient(135deg,#0000 18.75%,#5E412F 0 31.25%,#0000 0),
@@ -13,18 +13,6 @@ body, h1, h2, p, ul, li {
     background-size: var(--s) var(--s); 
     font-family: "Kalam", cursive;
 }
-
-
-/* CONTENEDOR */
-/*
-.contenedor {
-    width: 90%;
-    max-width: 1000px;
-    margin: 4em;
-    display: grid;
-    gap: 1.6em;
-    grid-template-columns: repeat(5, 1fr);
-}*/
 
  .contenedor>.content, .contenedor>.sidebar, .contenedor>div {
     background: #fff;
@@ -65,13 +53,10 @@ body, h1, h2, p, ul, li {
 }
 
 .contenedor>.related-post {
-    /*background: #0f0e0e;*/
     color: #ffffff;
     height: 180px;
     display: flex;
-   /* align-items: center;
-    justify-content: center;*/
-    /* transition: all 0.5s ease;*/
+
 } 
 
 /* MEDIA QUERIES CELULARES */
