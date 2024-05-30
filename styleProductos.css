@@ -37,9 +37,6 @@ body {
     gap: 10px;
 }
 
-.grid-item {
-    padding: 10px;
-}
 .descripcion {
     color:red;
     font-size: 2vw;
