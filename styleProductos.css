@@ -96,7 +96,6 @@ footer{
     .grid-container {
         grid-template-columns: 1fr;
         font-size: small;
-       /* padding-top: 20px;*/
       }
     
       .copyright {

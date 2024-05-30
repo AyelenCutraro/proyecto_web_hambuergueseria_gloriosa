@@ -1,5 +1,4 @@
 body {
-  /* Fondo con degradado de colores */
   background: radial-gradient(circle at 0.2% 1.8%, rgb(88, 0, 0) 0%, rgb(255, 90, 8) 100.2%);
   color: rgb(250, 248, 246);
   min-width: 320px;
@@ -10,7 +9,7 @@ body {
 }
 
 .image-container img {
-  border: 2px solid black; /* Ajusta el grosor, estilo y color del borde según sea necesario */
+  border: 2px solid black; 
 }
 
 .text-muted{
@@ -63,17 +62,17 @@ input:invalid::after {
     overflow: hidden;
   }
 
-  /* Estilo para el contenedor principal */
+  
   .contenedor {
     flex-grow: 1;
-    gap: 20px; /* Espacio entre columnas */
+    gap: 20px; 
     padding: 20px;
     font-size: 3vw;
   }
 
-  /* Estilo para el formulario */
+ 
   form {
-    max-width: 100%; /* Ajusta al ancho del contenedor */
+    max-width: 100%; 
   }
 
   .form-control {
@@ -83,14 +82,14 @@ input:invalid::after {
     font-size: 3vw;
   }
 
-  /* Estilo para la imagen */
+
   .image-container {
-    text-align: center; /* Centra la imagen */
+    text-align: center; 
   }
 
   .image-container img {
-    max-width: 100%; /* Ajusta al ancho del contenedor */
-    max-height: 100%; /* Ajusta al alto del contenedor */
+    max-width: 100%; 
+    max-height: 100%; 
     background: radial-gradient(circle at 0.2% 1.8%, rgb(255, 90, 8) 0%, rgb(88, 0, 0) 100.2%);
   }
 
@@ -123,9 +122,9 @@ input:invalid::after {
     color: gold;
   }
 
-  /* Estilo para el contenedor principal */
+
   .contenedor {
-    gap: 20px; /* Espacio entre columnas */
+    gap: 20px; 
     padding: 20px;
     font-size: 3vw;
   }
@@ -137,19 +136,19 @@ input:invalid::after {
     font-size: 3vw;
   }
 
-  /* Estilo para el formulario */
+  
   form {
-    max-width: 100%; /* Ajusta al ancho del contenedor */
+    max-width: 100%; 
   }
 
-  /* Estilo para la imagen */
+
   .image-container {
-    text-align: center; /* Centra la imagen */
+    text-align: center; /
   }
 
   .image-container img {
-    max-width: 100%; /* Ajusta al ancho del contenedor */
-    max-height: 100%; /* Ajusta al alto del contenedor */
+    max-width: 100%; 
+    max-height: 100%; 
   }
 
   .botonera {
@@ -176,32 +175,32 @@ input:invalid::after {
     font-size: 3vw;
   }
 
-  /* Estilo para el contenedor principal */
+  
   .contenedor {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide en dos columnas */
-    gap: 20px; /* Espacio entre columnas */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
     padding: 20px;
   }
 
-  /* Estilo para el formulario */
+
   form {
     font-size: larger;
-    max-width: 100%; /* Ajusta al ancho del contenedor */
+    max-width: 100%; 
   }
 
   .form-control {
-    font-size: 1.5vw; /* Incrementa el tamaño del calendario */
+    font-size: 1.5vw; 
   }
 
-  /* Estilo para la imagen */
+ 
   .image-container {
-    text-align: center; /* Centra la imagen */
+    text-align: center; 
   }
 
   .image-container img {
-    max-width: 100%; /* Ajusta al ancho del contenedor */
-    max-height: 100%; /* Ajusta al alto del contenedor */
+    max-width: 100%; 
+    max-height: 100%; 
   }
 
   .image-container {

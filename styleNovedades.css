@@ -39,9 +39,7 @@ body, h1, h2, p, ul, li {
   }
 }
 
-/* 
- * 	Owl Carousel - Auto Height Plugin
- */
+
 .owl-height {
   -webkit-transition: height 500ms ease-in-out;
   -moz-transition: height 500ms ease-in-out;
@@ -50,14 +48,11 @@ body, h1, h2, p, ul, li {
   transition: height 500ms ease-in-out;
 }
 
-/* 
- *  Core Owl Carousel CSS File
- */
+
 .owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
-  /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
   z-index: 1;
 }
@@ -77,7 +72,6 @@ body, h1, h2, p, ul, li {
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-  /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
@@ -146,14 +140,10 @@ body, h1, h2, p, ul, li {
   float: right;
 }
 
-/* No Js */
 .no-js .owl-carousel {
   display: block;
 }
 
-/* 
- * 	Owl Carousel - Lazy Load Plugin
- */
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
   -webkit-transition: opacity 400ms ease;
@@ -166,9 +156,6 @@ body, h1, h2, p, ul, li {
   transform-style: preserve-3d;
 }
 
-/* 
- * 	Owl Carousel - Video Plugin
- */
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
@@ -223,12 +210,11 @@ body, h1, h2, p, ul, li {
   position: relative;
   z-index: 1;
 } 
-/************************************************************************************************************************/
-/* Cartel "Nueva" dentro del carrusel */
+/*******************************************************************************************************************/
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
-  padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
-  border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+  border-radius: 10px; 
 }
 
 .carousel-caption .sedgwick-ave-display-regular {
@@ -237,14 +223,14 @@ body, h1, h2, p, ul, li {
 }
 
 .carousel-caption span {
-  color: #fff; /* Texto blanco para mayor contraste */
+  color: #fff; 
 }
 
 .carousel-caption .sedgwick-ave-display-regular,
 .carousel-caption .kalam-bold,
 .carousel-caption .kalam-regular {
   display: block;
-  margin: 1px 0; /* Margen entre las líneas de texto */
+  margin: 1px 0; 
 }
 
 /************************************************************************************************************************/
@@ -328,9 +314,9 @@ main {
   }
 
   .contenedor p {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
-    padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
-    border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 10px;  
     max-width: 100%;
     font-size: 4vw;
     margin-left: 10px;
@@ -353,7 +339,7 @@ main {
 
   .related-post {
     height: 120px;
-    font-size: 16px; /* Cambiar tamaño de fuente si es necesario */
+    font-size: 16px; 
     align-items: center !important;
   }
   .contenedor img {
@@ -363,9 +349,9 @@ main {
     margin-bottom: 5px;
   }
   .contenedor p {
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de transparencia */
-    padding: 15px; /* Espaciado interno para que el texto no quede pegado al borde */
-    border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 15px; 
+    border-radius: 10px; 
     margin-right: 10px;
     margin-top: 5px;
     max-width: 60%;
@@ -389,9 +375,9 @@ main {
   }
 
   .contenedor p {
-    background-color: rgba(8, 8, 8, 0.5); /* Fondo negro con 50% de transparencia */
-    padding: 10px; /* Espaciado interno para que el texto no quede pegado al borde */
-    border-radius: 10px;  /*Bordes redondeados para un aspecto más suave */
+    background-color: rgba(8, 8, 8, 0.5); 
+    padding: 10px; 
+    border-radius: 10px;  
     max-width: 100%;
     font-size: 2.4vw;
     margin-left: 10px;
